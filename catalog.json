@@ -1,0 +1,89 @@
+{
+  "name": "full-work-plugins",
+  "displayName": "Full Work Plugins",
+  "description": "面向非技术岗位的日常办公插件：企业沟通、文档、表格、日历与待办。",
+  "plugins": [],
+  "candidatePlugins": [
+    {
+      "id": "dingtalk-cli",
+      "displayName": "DingTalk CLI (Office Collaboration)",
+      "repository": "full-work-plugins/dingtalk-cli-plugin",
+      "localDirectory": "dingtalk-cli-plugin",
+      "version": "0.1.0",
+      "status": "local_candidate",
+      "category": "Productivity",
+      "line": "full-work",
+      "componentTypes": [
+        "skills"
+      ],
+      "description": "Use the local DingTalk Workspace CLI for messages, docs, tables, calendars, and tasks.",
+      "shortDescription": "DingTalk messages, documents, and calendars via local CLI.",
+      "tags": [
+        "dingtalk",
+        "office",
+        "cli"
+      ],
+      "localizations": {
+        "zh-CN": {
+          "displayName": "DingTalk CLI（办公协作）",
+          "description": "通过本机钉钉 Workspace CLI 处理消息、文档、表格、日程和待办。",
+          "shortDescription": "本机 CLI 办理钉钉消息、文档与日程。"
+        }
+      }
+    },
+    {
+      "id": "lark-cli",
+      "displayName": "Lark CLI (Office Collaboration)",
+      "repository": "full-work-plugins/lark-cli-plugin",
+      "localDirectory": "lark-cli-plugin",
+      "version": "0.1.0",
+      "status": "local_candidate",
+      "category": "Productivity",
+      "line": "full-work",
+      "componentTypes": [
+        "skills"
+      ],
+      "description": "Use the local Lark CLI for docs, sheets, Base, messages, and calendars.",
+      "shortDescription": "Lark documents, Base, and calendars via local CLI.",
+      "tags": [
+        "lark",
+        "office",
+        "cli"
+      ],
+      "localizations": {
+        "zh-CN": {
+          "displayName": "Lark CLI（办公协作）",
+          "description": "通过本机飞书 CLI 处理文档、表格、多维表格、消息和日程。",
+          "shortDescription": "本机 CLI 办理飞书文档、多维表格与日程。"
+        }
+      }
+    },
+    {
+      "id": "wecom-cli",
+      "displayName": "WeCom CLI (Office Collaboration)",
+      "repository": "full-work-plugins/wecom-cli-plugin",
+      "localDirectory": "wecom-cli-plugin",
+      "version": "0.1.0",
+      "status": "local_candidate",
+      "category": "Productivity",
+      "line": "full-work",
+      "componentTypes": [
+        "skills"
+      ],
+      "description": "Use the local WeCom CLI for messages, docs, sheets, mail, meetings, and tasks.",
+      "shortDescription": "WeCom messages, mail, and meetings via local CLI.",
+      "tags": [
+        "wecom",
+        "office",
+        "cli"
+      ],
+      "localizations": {
+        "zh-CN": {
+          "displayName": "WeCom CLI（办公协作）",
+          "description": "通过本机企业微信 CLI 处理消息、文档、表格、邮件、会议和待办。",
+          "shortDescription": "本机 CLI 办理企业微信消息、邮件与会议。"
+        }
+      }
+    }
+  ]
+}
