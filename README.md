@@ -42,7 +42,7 @@ full-work-plugins/
 └── scripts/                             # 生成、校验与后续发版工具
 ```
 
-插件实现的事实源在相邻的 `full-work-plugins-repositories/<插件名>-plugin/` 中。`plugins/` 保存从固定 Release 生成的完整本地包；Codex 读取包内的图标和中文展示字段，ZCode、Kimi 仍引用独立仓库。不要直接修改生成包。各插件仓维护 `.codex-plugin/plugin.json`、`.claude-plugin/plugin.json`、`.zcode-plugin/plugin.json`、`kimi.plugin.json`、`plugin.json` 和 `skills/`。中文清单目前仍使用已验证的 GitHub Release 安装源；Gitee 与 AtomGit 镜像尚未发布，不在清单中伪造镜像地址。
+插件实现的事实源在相邻的 `full-work-plugins-repositories/<插件名>-plugin/` 中。`plugins/` 保存从固定 Release 生成的四个完整办公 CLI 包，以及十三个 Craft Codex 轻量入口；Codex 与 ZCode 根市场直接读取办公 CLI 包。Craft 在 ZCode 中仍远程安装，Kimi 仍引用独立仓库。不要直接修改生成包。各插件仓维护 `.codex-plugin/plugin.json`、`.claude-plugin/plugin.json`、`.zcode-plugin/plugin.json`、`kimi.plugin.json`、`plugin.json` 和 `skills/`。中文清单目前仍使用已验证的 GitHub Release 安装源；Gitee 与 AtomGit 镜像尚未发布，不在清单中伪造镜像地址。
 
 ## 校验与后续发版
 
