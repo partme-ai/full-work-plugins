@@ -37,7 +37,9 @@ async function install() {
     if (digest !== release.sha256) throw new Error(`Craft release SHA-256 mismatch: ${release.name}`);
     const extracted = path.join(stage, "extracted");
     fs.mkdirSync(extracted);
-    const unpack = spawnSync("tar", ["-xf", archive, "-C", extracted], { encoding: "utf8" });
+    const unpack = spawnSync(process.platform === "win32" ? "python" : "python3",
+      [path.join(shell, "scripts", "extract-release.py"), archive, extracted, release.archiveRoot],
+      { encoding: "utf8" });
     if (unpack.status !== 0) throw new Error(`Craft release extraction failed: ${unpack.stderr}`);
     const manifest = JSON.parse(fs.readFileSync(path.join(extracted, release.archiveRoot, "plugin.json"), "utf8"));
     if (manifest.name !== release.name || manifest.version !== release.version) throw new Error("Craft release identity mismatch");

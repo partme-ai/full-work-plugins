@@ -13,7 +13,7 @@
 | [企业微信 CLI v0.1.1](https://github.com/full-work-plugins/wecom-cli-plugin/releases/tag/v0.1.1) | `../full-work-plugins-repositories/wecom-cli-plugin` | [WeCom CLI](https://github.com/WecomTeam/wecom-cli) | [ZCode wecom-cli](https://github.com/zai-org/zcode-plugins/tree/0cc58d6/plugins/wecom-cli) |
 | [腾讯会议 CLI v0.1.0](https://github.com/full-work-plugins/tencent-meeting-cli-plugin/releases/tag/v0.1.0) | `../full-work-plugins-repositories/tencent-meeting-cli-plugin` | [Tencent Meeting CLI](https://github.com/TencentCloud/tencentmeeting-cli) | [ZCode tencent-meeting-cli](https://github.com/zai-org/zcode-plugins/tree/0cc58d6/plugins/tencent-meeting-cli) |
 
-CADCraft、DeckCraft、DesignCraft、EffectCraft、FigCraft、FilmCraft、GridCraft、LightCraft、PdfCraft、PhotoCraft、SoundCraft、VectorCraft、WordCraft 的准确仓库、版本、中文展示名和图标路径记录于 [`catalog.json`](catalog.json)；ZIP 资产、SHA-256 与 Release 来源记录于 [`docs/craft-marketplace-candidate-releases.json`](docs/craft-marketplace-candidate-releases.json)。Codex 安装本市场的轻量入口，首次启动编辑器时按 SHA-256 下载完整 Release ZIP；ZCode 从校验过摘要的 Release ZIP 安装，单个 ZIP 条目超过宿主限制时回退到固定 Git 标签。Craft 的独立实现仍在原仓库维护。
+CADCraft、DeckCraft、DesignCraft、EffectCraft、FigCraft、FilmCraft、GridCraft、LightCraft、PdfCraft、PhotoCraft、SoundCraft、VectorCraft、WordCraft 的准确仓库、版本、中文展示名和图标路径记录于 [`catalog.json`](catalog.json)；ZIP 资产、SHA-256 与 Release 来源记录于 [`docs/craft-marketplace-candidate-releases.json`](docs/craft-marketplace-candidate-releases.json)。Codex 安装本市场的轻量入口，首次启动编辑器时使用 Node.js 与 Python 3 按 SHA-256 下载、解包完整 Release ZIP；ZCode 从校验过摘要的 Release ZIP 安装，单个 ZIP 条目超过宿主限制时回退到固定 Git 标签。Craft 的独立实现仍在原仓库维护。
 
 聚合目录与本地市场的构建方式参考 [ZCode 官方插件仓的市场结构](https://github.com/zai-org/zcode-plugins)：市场清单使用相对 `./plugins/<id>` 来源，完整插件目录随本地分发目录复制。独立插件代码和历史来源见各包仓库；本仓只生成固定版本副本。
 
