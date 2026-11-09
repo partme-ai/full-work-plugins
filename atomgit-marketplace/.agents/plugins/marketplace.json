@@ -1,0 +1,12 @@
+{
+  "name": "full-work-plugins",
+  "description": "Full Work 插件市场（AtomGit 镜像）：面向办公智能体的协作插件，覆盖企业沟通、文档、表格、日历与待办。",
+  "owner": {
+    "name": "PartMe.AI",
+    "url": "https://github.com/partme-ai"
+  },
+  "plugins": [],
+  "interface": {
+    "displayName": "Full Work 插件"
+  }
+}

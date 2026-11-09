@@ -1,0 +1,12 @@
+{
+  "name": "full-work-plugins",
+  "description": "Full Work plugin marketplace for Codex, ZCode, and Kimi Code: enterprise messaging, documents, spreadsheets, calendars, and tasks.",
+  "owner": {
+    "name": "PartMe.AI",
+    "url": "https://github.com/partme-ai"
+  },
+  "plugins": [],
+  "interface": {
+    "displayName": "Full Work Plugins"
+  }
+}

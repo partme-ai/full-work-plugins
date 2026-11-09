@@ -1,0 +1,14 @@
+{
+  "id": "global",
+  "locale": "en",
+  "marketplaceName": "full-work-plugins",
+  "displayName": "Full Work Plugins",
+  "description": "Full Work plugin marketplace for Codex, ZCode, and Kimi Code: enterprise messaging, documents, spreadsheets, calendars, and tasks.",
+  "provider": "github",
+  "codeHost": "https://github.com",
+  "releaseTagPath": "/releases/tag/",
+  "assetBase": "https://cdn.jsdelivr.net/gh",
+  "assetStyle": "jsdelivr",
+  "repositoryOrg": "full-work-plugins",
+  "output": "."
+}

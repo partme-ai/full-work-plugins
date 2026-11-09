@@ -1,0 +1,13 @@
+{
+  "id": "atomgit",
+  "locale": "zh-CN",
+  "marketplaceName": "full-work-plugins",
+  "displayName": "Full Work 插件",
+  "description": "Full Work 插件市场（AtomGit 镜像）：面向办公智能体的协作插件，覆盖企业沟通、文档、表格、日历与待办。",
+  "provider": "atomgit",
+  "codeHost": "https://atomgit.com",
+  "releaseTagPath": "/releases/tag/",
+  "assetBase": "https://raw.atomgit.com",
+  "repositoryOrg": "full-work-plugins",
+  "output": "atomgit-marketplace"
+}

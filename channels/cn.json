@@ -1,0 +1,14 @@
+{
+  "id": "cn",
+  "locale": "zh-CN",
+  "marketplaceName": "full-work-plugins-cn",
+  "displayName": "Full Work 插件（Gitee 镜像）",
+  "description": "Full Work 插件市场（Gitee 镜像）：面向 Codex、ZCode 与 Kimi Code，覆盖企业沟通、文档、表格、日历与待办。",
+  "provider": "gitee",
+  "codeHost": "https://gitee.com",
+  "releaseTagPath": "/releases/tag/",
+  "assetBase": "https://gitee.com",
+  "assetStyle": "gitee-raw",
+  "repositoryOrg": "full-work-plugins",
+  "output": "cn-marketplace"
+}

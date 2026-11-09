@@ -6,4 +6,6 @@
 
 首批插件改写自 ZCode 官方市场的同名 CLI 插件。每个插件的 `THIRD-PARTY-NOTICES.md` 必须标明来源提交、原封装作者、厂商 CLI 来源与改动范围。不得打包凭证或厂商二进制。远端写操作由 Skill 明确确认目标与变更。
 
-运行 `python3 scripts/validate-candidates.py` 做目录与插件包静态验证。真实 CLI、认证、业务 API 和宿主安装分别验收，不互相替代。
+运行 `python3 scripts/validate-candidates.py` 做目录与插件包静态验证。`scripts/sync-marketplaces.mjs`、`scripts/sync-cn-marketplace.mjs` 生成三宿主与渠道清单；生成物只由脚本写入。CI 用 `--catalog-only` 验证候选目录，本地完整模式还需相邻插件仓。真实 CLI、认证、业务 API 和宿主安装分别验收，不互相替代。
+
+当前尚无已发布办公插件，公开清单为空是预期结果。`channels/` 中的 Gitee 与 AtomGit 配置只描述未来镜像输出，不证明镜像已部署。发布前须核对独立仓库的版本标签、Release、logo 与宿主清单，不得将 feature 分支伪装成发布版本。
