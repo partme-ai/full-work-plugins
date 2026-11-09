@@ -38,6 +38,7 @@ const candidates = (catalog.candidatePlugins ?? []).filter(plugin => plugin.stat
 const marketplacePlugins = [...catalog.plugins, ...candidates];
 const craftReleases = JSON.parse(fs.readFileSync(path.join(root, "docs/craft-marketplace-candidate-releases.json"), "utf8"));
 const zcodeSource = (plugin) => {
+  if (catalog.plugins.some(published => published.id === plugin.id)) return `./plugins/${plugin.id}`;
   const release = craftReleases.find(entry => entry.plugin === plugin.id && entry.version === plugin.version);
   if (!release) return { source: "github", repo: plugin.repository, ref: releaseRef(plugin) };
   if (release.maximumZipEntryBytes > 50 * 1024 * 1024) return { source: "github", repo: plugin.repository, ref: releaseRef(plugin) };
@@ -75,8 +76,8 @@ const zcode = {
     name: plugin.id,
     source: zcodeSource(plugin),
     // ZCode 列表以 displayName 为准；缺失时会退化成插件 id，因此每条都必须写。
-    displayName: localized(plugin, "displayName"),
-    description: localized(plugin, "description"),
+    displayName: codexLocalized(plugin, "displayName"),
+    description: codexLocalized(plugin, "description"),
     version: plugin.version,
     category: plugin.category,
     line: plugin.line,

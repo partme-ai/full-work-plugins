@@ -5,13 +5,9 @@
   "plugins": [
     {
       "name": "dingtalk-cli",
-      "source": {
-        "source": "github",
-        "repo": "full-work-plugins/dingtalk-cli-plugin",
-        "ref": "v0.1.1"
-      },
-      "displayName": "DingTalk CLI (Office Collaboration)",
-      "description": "Use the local DingTalk Workspace CLI for messages, docs, tables, calendars, and tasks.",
+      "source": "./plugins/dingtalk-cli",
+      "displayName": "钉钉 CLI",
+      "description": "钉钉 Workspace CLI 工作流：OAuth/设备授权、组织账号验证与消息、文档、日程操作。",
       "version": "0.1.1",
       "category": "Productivity",
       "line": "full-work",
@@ -28,13 +24,9 @@
     },
     {
       "name": "lark-cli",
-      "source": {
-        "source": "github",
-        "repo": "full-work-plugins/lark-cli-plugin",
-        "ref": "v0.1.1"
-      },
-      "displayName": "Lark CLI (Office Collaboration)",
-      "description": "Use the local Lark CLI for docs, sheets, Base, messages, and calendars.",
+      "source": "./plugins/lark-cli",
+      "displayName": "飞书 CLI",
+      "description": "Lark CLI 工作流：覆盖文档、表格、多维表格、日历、消息等办公资源，并引导应用配置与 OAuth 登录。",
       "version": "0.1.1",
       "category": "Productivity",
       "line": "full-work",
@@ -51,13 +43,9 @@
     },
     {
       "name": "tencent-meeting-cli",
-      "source": {
-        "source": "github",
-        "repo": "full-work-plugins/tencent-meeting-cli-plugin",
-        "ref": "v0.1.0"
-      },
-      "displayName": "Tencent Meeting CLI (Office Collaboration)",
-      "description": "Use the local Tencent Meeting CLI for OAuth2 authentication, meetings, recordings, and attendee reports.",
+      "source": "./plugins/tencent-meeting-cli",
+      "displayName": "腾讯会议 CLI",
+      "description": "腾讯会议 CLI 工作流：OAuth2 授权、会议管理、录制管理和参会报告查询。",
       "version": "0.1.0",
       "category": "Productivity",
       "line": "full-work",
@@ -74,13 +62,9 @@
     },
     {
       "name": "wecom-cli",
-      "source": {
-        "source": "github",
-        "repo": "full-work-plugins/wecom-cli-plugin",
-        "ref": "v0.1.1"
-      },
-      "displayName": "WeCom CLI (Office Collaboration)",
-      "description": "Use the local WeCom CLI for messages, docs, sheets, mail, meetings, and tasks.",
+      "source": "./plugins/wecom-cli",
+      "displayName": "企业微信 CLI",
+      "description": "企业微信 CLI 工作流：覆盖消息、文档、表格、邮件、日历、会议、通讯录和待办，并支持扫码授权。",
       "version": "0.1.1",
       "category": "Productivity",
       "line": "full-work",
