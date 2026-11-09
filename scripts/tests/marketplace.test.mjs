@@ -80,6 +80,8 @@ test("local ZCode distribution embeds office packages and leaves Craft remote", 
     assert.equal(entry.source, `./plugins/${plugin.id}`);
     assert.equal(entry.displayName, plugin.localizations["zh-CN"].displayName);
     assert.equal(entry.description, plugin.localizations["zh-CN"].description);
+    assert.equal(entry.category, "productivity");
+    assert.deepEqual(entry.componentTypes, ["skill"]);
   }
   const distribution = read("dist/local-marketplace/marketplace.json");
   for (const plugin of catalog.plugins) {
