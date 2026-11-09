@@ -38,10 +38,17 @@ test("office releases and Craft candidates have one owner and pinned sources", (
   }
   for (const candidate of catalog.candidatePlugins) {
     const card = read(".agents/plugins/marketplace.json").plugins.find(item => item.name === candidate.id);
-    assert.deepEqual(card.source, { source: "url", url: `https://github.com/${candidate.repository}.git`, ref: `v${candidate.version}` });
+    assert.deepEqual(card.source, { source: "local", path: `./plugins/${candidate.id}` });
     assert.equal(card.interface.displayName, candidate.localizations["zh-CN"].displayName);
     assert.equal(card.interface.logo, `https://cdn.jsdelivr.net/gh/${candidate.repository}@v${candidate.version}/${candidate.logo}`);
-    assert.ok(!fs.existsSync(path.join(root, "plugins", candidate.id)));
+    const shell = path.join(root, "plugins", candidate.id);
+    assert.ok(fs.existsSync(path.join(shell, "assets", "official-logo.png")));
+    assert.ok(fs.existsSync(path.join(shell, "scripts", "remote-runtime.mjs")));
+    assert.ok(fs.existsSync(path.join(shell, "skills")));
+    assert.ok(!fs.existsSync(path.join(shell, "ui", "dist")), `${candidate.id}: full runtime must stay remote`);
+    const runtime = JSON.parse(fs.readFileSync(path.join(shell, "runtime.json"), "utf8"));
+    const release = read("docs/craft-marketplace-candidate-releases.json").find(item => item.plugin === candidate.id);
+    assert.equal(runtime.sha256, release.archiveSha256);
   }
 });
 
@@ -82,6 +89,6 @@ test("local ZCode distribution embeds office packages and leaves Craft remote", 
       assert.equal(entry.source.source, "url");
       assert.equal(entry.source.sha256, release.archiveSha256);
     }
-    assert.ok(!fs.existsSync(path.join(root, "dist/local-marketplace/plugins", plugin.id)));
+    assert.ok(fs.existsSync(path.join(root, "dist/local-marketplace/plugins", plugin.id, "plugin.json")));
   }
 });

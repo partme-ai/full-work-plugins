@@ -22,7 +22,7 @@ def run(market,output,public=False,cli=None,names=None,ref=None,marketplace_name
   for name in names:
    plugin=next(p for p in entries if p['name']==name)
    assert not plugin['installed'], 'Listing verification must precede install'
-   logo=plugin['interface'].get('logo') or plugin.get('icon')
+   logo=plugin['interface'].get('logo') or plugin['interface'].get('logoUrl') or plugin.get('icon')
    assert logo, name+' missing pre-install logo'
    if logo.startswith('https://'):
     with urlopen(logo,timeout=30) as response: assert response.status==200 and response.headers.get('Content-Type','').startswith('image/'), name+' invalid remote logo'
@@ -60,6 +60,11 @@ def run(market,output,public=False,cli=None,names=None,ref=None,marketplace_name
     url=values['open_browser_editor']['structuredContent']['editorUrl']
     with urlopen(url,timeout=30) as response:
      assert response.status==200 and 'html' in response.headers.get('Content-Type',''), 'Editor HTML unavailable'
+    installed=Path(json.loads((output/(name+'-install.json')).read_text())['installedPath'])
+    loaded=host.call('skills/list',{'cwds':[str(work)],'forceReload':True})
+    actual={str(Path(skill['path']).resolve()) for entry in loaded['data'] for skill in entry['skills'] if skill.get('enabled')}
+    expected={str(path.resolve()) for path in (installed/'skills').glob('*/SKILL.md')}
+    assert len(expected)>1 and expected.issubset(actual), name+' released skills unavailable after runtime download'
     row={'editorHtml':'PASS','plugin':name,'installation':'PASS','nativeMcp':'PASS','editorUrl':values['open_browser_editor']['structuredContent']['editorUrl'],'embeddedUI':'NOT_TESTED','editingSync':'NOT_TESTED'}
    except Exception as error:row={'plugin':name,'status':'FAIL','error':str(error)[:600]}
    rows.append(row);(output/'results.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2));print(json.dumps(row,ensure_ascii=False),flush=True)

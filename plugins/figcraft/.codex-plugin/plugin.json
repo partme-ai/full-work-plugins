@@ -1,0 +1,16 @@
+{
+  "name": "figcraft",
+  "version": "0.1.0-dev.20261019.2",
+  "description": "在对话里做可编辑设计稿：线框、设计系统、明暗主题、原型流与开发交接。",
+  "skills": "./skills/",
+  "mcpServers": "./.codex-plugin/mcp.json",
+  "interface": {
+    "displayName": "FigCraft（设计稿编辑）",
+    "shortDescription": "在对话里做可编辑设计稿：线框、设计系统、明暗主题、原型流与开发交接。",
+    "category": "Creativity",
+    "logo": "./assets/official-logo.png",
+    "logoDark": "./assets/official-logo.png",
+    "composerIcon": "./assets/official-logo.png",
+    "composerIconDark": "./assets/official-logo.png"
+  }
+}

@@ -50,9 +50,7 @@ const codex = {
   owner: { name: "PartMe.AI", url: "https://github.com/partme-ai" },
   plugins: marketplacePlugins.map((plugin) => ({
     name: plugin.id,
-    source: candidates.some(candidate => candidate.id === plugin.id)
-      ? { source: "url", url: `https://github.com/${plugin.repository}.git`, ref: releaseRef(plugin) }
-      : { source: "local", path: `./plugins/${plugin.id}` },
+    source: { source: "local", path: `./plugins/${plugin.id}` },
     policy: { installation: "AVAILABLE", authentication: "ON_USE" },
     category: plugin.codexCategory ?? plugin.category,
     line: plugin.line,

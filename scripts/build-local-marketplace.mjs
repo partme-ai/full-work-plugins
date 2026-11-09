@@ -14,6 +14,7 @@ for (const relative of [".agents/plugins/marketplace.json", "marketplace.json", 
 }
 const manifest = JSON.parse(fs.readFileSync(path.join(staging, ".agents/plugins/marketplace.json")));
 const localNames = new Set(manifest.plugins.filter(plugin => plugin.source?.source === "local").map(plugin => plugin.name));
+const publishedNames = new Set(JSON.parse(fs.readFileSync(path.join(root, "catalog.json"), "utf8")).plugins.map(plugin => plugin.id));
 for (const plugin of manifest.plugins) {
   if (plugin.source?.source !== "local") continue;
   const relative = plugin.source.path;
@@ -25,9 +26,9 @@ for (const plugin of manifest.plugins) {
 const zcodePath = path.join(staging, "marketplace.json");
 const zcode = JSON.parse(fs.readFileSync(zcodePath, "utf8"));
 for (const plugin of zcode.plugins) {
-  if (localNames.has(plugin.name)) plugin.source = `./plugins/${plugin.name}`;
+  if (publishedNames.has(plugin.name) && localNames.has(plugin.name)) plugin.source = `./plugins/${plugin.name}`;
 }
 fs.writeFileSync(zcodePath, `${JSON.stringify(zcode, null, 2)}\n`);
 fs.rmSync(target, { recursive: true, force: true });
 fs.renameSync(staging, target);
-console.log(`Built ${target} with ${manifest.plugins.filter(p => p.source?.source === "local").length} aggregated packages.`);
+console.log(`Built ${target} with ${publishedNames.size} complete office packages and ${localNames.size - publishedNames.size} Craft Codex entries.`);

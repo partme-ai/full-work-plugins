@@ -1,0 +1,26 @@
+{
+  "name": "lightcraft",
+  "version": "0.1.0-dev.20261018.4",
+  "description": "RAW 显影、风光人像、批量调色、曲线迁移与虚拟副本审稿，编辑全程非破坏。",
+  "author": {
+    "name": "Full AIGC Plugins",
+    "url": "https://github.com/full-aigc-plugins"
+  },
+  "homepage": "https://github.com/full-aigc-plugins/lightcraft-plugin",
+  "repository": "https://github.com/full-aigc-plugins/lightcraft-plugin",
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "LightCraft（照片调色）",
+        "shortDescription": "RAW 显影、风光人像、批量调色、曲线迁移与虚拟副本审稿，编辑全程非破坏。",
+        "category": "Creativity",
+        "logo": "./assets/official-logo.png",
+        "logoDark": "./assets/official-logo.png",
+        "composerIcon": "./assets/official-logo.png",
+        "composerIconDark": "./assets/official-logo.png"
+      }
+    }
+  }
+}
