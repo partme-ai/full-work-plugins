@@ -1,20 +1,19 @@
 # Full Work Plugins
 
-面向非技术岗位的办公插件线，沿用 [Full Stack Plugins](https://github.com/partme-ai/full-stack-plugins) 的“市场仓 + 独立插件仓”结构。首批提供钉钉、飞书和企业微信的本机 CLI 工作流，覆盖消息、文档、表格、日历与待办。
+面向非技术岗位的办公插件线，沿用 [Full Stack Plugins](https://github.com/partme-ai/full-stack-plugins) 的“市场仓 + 独立插件仓”结构。首批提供钉钉、飞书、企业微信和腾讯会议的本机 CLI 工作流，覆盖消息、文档、表格、日历与待办。
 
 ## 插件目录与来源
 
 | 插件 | 本地插件目录 | 上游 CLI | 来源 |
 | --- | --- | --- | --- |
-| [钉钉 CLI v0.1.0](https://github.com/full-work-plugins/dingtalk-cli-plugin/releases/tag/v0.1.0) | `../full-work-plugins-repositories/dingtalk-cli-plugin` | [DingTalk Workspace CLI](https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli) | [ZCode dingtalk-cli](https://github.com/zai-org/zcode-plugins/tree/0cc58d6/plugins/dingtalk-cli) |
-| [飞书 CLI v0.1.0](https://github.com/full-work-plugins/lark-cli-plugin/releases/tag/v0.1.0) | `../full-work-plugins-repositories/lark-cli-plugin` | [Lark CLI](https://github.com/larksuite/cli) | [ZCode lark-cli](https://github.com/zai-org/zcode-plugins/tree/0cc58d6/plugins/lark-cli) |
-| [企业微信 CLI v0.1.0](https://github.com/full-work-plugins/wecom-cli-plugin/releases/tag/v0.1.0) | `../full-work-plugins-repositories/wecom-cli-plugin` | [WeCom CLI](https://github.com/WecomTeam/wecom-cli) | [ZCode wecom-cli](https://github.com/zai-org/zcode-plugins/tree/0cc58d6/plugins/wecom-cli) |
+| [钉钉 CLI v0.1.1](https://github.com/full-work-plugins/dingtalk-cli-plugin/releases/tag/v0.1.1) | `../full-work-plugins-repositories/dingtalk-cli-plugin` | [DingTalk Workspace CLI](https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli) | [ZCode dingtalk-cli](https://github.com/zai-org/zcode-plugins/tree/0cc58d6/plugins/dingtalk-cli) |
+| [飞书 CLI v0.1.1](https://github.com/full-work-plugins/lark-cli-plugin/releases/tag/v0.1.1) | `../full-work-plugins-repositories/lark-cli-plugin` | [Lark CLI](https://github.com/larksuite/cli) | [ZCode lark-cli](https://github.com/zai-org/zcode-plugins/tree/0cc58d6/plugins/lark-cli) |
+| [企业微信 CLI v0.1.1](https://github.com/full-work-plugins/wecom-cli-plugin/releases/tag/v0.1.1) | `../full-work-plugins-repositories/wecom-cli-plugin` | [WeCom CLI](https://github.com/WecomTeam/wecom-cli) | [ZCode wecom-cli](https://github.com/zai-org/zcode-plugins/tree/0cc58d6/plugins/wecom-cli) |
+| [腾讯会议 CLI v0.1.0](https://github.com/full-work-plugins/tencent-meeting-cli-plugin/releases/tag/v0.1.0) | `../full-work-plugins-repositories/tencent-meeting-cli-plugin` | [Tencent Meeting CLI](https://github.com/TencentCloud/tencentmeeting-cli) | [ZCode tencent-meeting-cli](https://github.com/zai-org/zcode-plugins/tree/0cc58d6/plugins/tencent-meeting-cli) |
 
 ## 安装与使用
 
-三个独立插件仓均已发布 `v0.1.0` Release，全球及中文市场清单均引用固定版本。Codex 可将 `partme-ai/full-work-plugins` 添加为插件市场，再选择 `dingtalk-cli`、`lark-cli`、`wecom-cli`。ZCode 在设置中的插件市场添加 `partme-ai/full-work-plugins`；Kimi Code CLI 使用 `/plugins marketplace https://raw.githubusercontent.com/partme-ai/full-work-plugins/main/kimi-marketplace.json`。
-
-在支持本地插件安装的宿主中，选择对应的 `full-work-plugins-repositories/<name>-plugin` 目录；先运行 `<name>-setup` 检查本机 CLI 与账号，再用 `<name>-use` 处理任务。插件不附带 CLI 二进制或凭证；安装 CLI、登录和远端写操作按 Skill 提示完成。没有账号时可以验证结构与帮助，不能声称业务调用可用。
+四个独立插件仓分别发布固定版本，全球及中文市场清单均引用固定版本。Codex 可将 `partme-ai/full-work-plugins` 添加为插件市场，再选择 `dingtalk-cli`、`lark-cli`、`wecom-cli`、`tencent-meeting-cli`。ZCode 在设置中的插件市场添加 `partme-ai/full-work-plugins`；Kimi Code CLI 使用 `/plugins marketplace https://raw.githubusercontent.com/partme-ai/full-work-plugins/main/kimi-marketplace.json`。
 
 插件包不附带 CLI 二进制或凭证。各插件先运行 setup Skill 检查 CLI 与身份；安装 CLI、登录和远端写操作按 Skill 提示完成。发布前已通过跨平台包结构检查与市场远端 Release 校验；账号授权、宿主实际加载和真实业务请求尚未验收。
 
@@ -47,4 +46,4 @@ node scripts/sync-cn-marketplace.mjs --channel=atomgit
 node scripts/verify-channel-parity.mjs
 ```
 
-上述命令默认只检查；改动 catalog 后使用对应脚本的 `--write` 生成，再重新运行检查。CI 从版本标签检出三个独立插件仓，核验 manifest、logo 和 GitHub Release。后续版本须先在插件仓完成版本标签与 Release，再更新本市场的 `catalog.json` 和生成清单。
+上述命令默认只检查；改动 catalog 后使用对应脚本的 `--write` 生成，再重新运行检查。CI 从版本标签检出四个独立插件仓，核验 manifest、logo 和 GitHub Release。后续版本须先在插件仓完成版本标签与 Release，再更新本市场的 `catalog.json` 和生成清单。

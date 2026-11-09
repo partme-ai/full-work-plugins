@@ -8,11 +8,11 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/dingtalk-cli-plugin.git",
-        "ref": "v0.1.0"
+        "ref": "v0.1.1"
       },
-      "displayName": "DingTalk CLI（办公协作）",
-      "description": "通过本机钉钉 Workspace CLI 处理消息、文档、表格、日程和待办。",
-      "version": "0.1.0",
+      "displayName": "钉钉 CLI",
+      "description": "钉钉 Workspace CLI 工作流：OAuth/设备授权、组织账号验证与消息、文档、日程操作。",
+      "version": "0.1.1",
       "category": "Productivity",
       "line": "full-work",
       "componentTypes": [
@@ -23,7 +23,7 @@
         "office",
         "cli"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.0/assets/logo.svg",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.1/assets/logo.png",
       "strict": true
     },
     {
@@ -31,11 +31,11 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/lark-cli-plugin.git",
-        "ref": "v0.1.0"
+        "ref": "v0.1.1"
       },
-      "displayName": "Lark CLI（办公协作）",
-      "description": "通过本机飞书 CLI 处理文档、表格、多维表格、消息和日程。",
-      "version": "0.1.0",
+      "displayName": "飞书 CLI",
+      "description": "Lark CLI 工作流：覆盖文档、表格、多维表格、日历、消息等办公资源，并引导应用配置与 OAuth 登录。",
+      "version": "0.1.1",
       "category": "Productivity",
       "line": "full-work",
       "componentTypes": [
@@ -46,7 +46,30 @@
         "office",
         "cli"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.0/assets/logo.svg",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.1/assets/logo.png",
+      "strict": true
+    },
+    {
+      "name": "tencent-meeting-cli",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/full-work-plugins/tencent-meeting-cli-plugin.git",
+        "ref": "v0.1.0"
+      },
+      "displayName": "腾讯会议 CLI",
+      "description": "腾讯会议 CLI 工作流：OAuth2 授权、会议管理、录制管理和参会报告查询。",
+      "version": "0.1.0",
+      "category": "Productivity",
+      "line": "full-work",
+      "componentTypes": [
+        "skills"
+      ],
+      "tags": [
+        "tencent-meeting",
+        "office",
+        "cli"
+      ],
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/tencent-meeting-cli-plugin@v0.1.0/assets/logo.png",
       "strict": true
     },
     {
@@ -54,11 +77,11 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/wecom-cli-plugin.git",
-        "ref": "v0.1.0"
+        "ref": "v0.1.1"
       },
-      "displayName": "WeCom CLI（办公协作）",
-      "description": "通过本机企业微信 CLI 处理消息、文档、表格、邮件、会议和待办。",
-      "version": "0.1.0",
+      "displayName": "企业微信 CLI",
+      "description": "企业微信 CLI 工作流：覆盖消息、文档、表格、邮件、日历、会议、通讯录和待办，并支持扫码授权。",
+      "version": "0.1.1",
       "category": "Productivity",
       "line": "full-work",
       "componentTypes": [
@@ -69,7 +92,7 @@
         "office",
         "cli"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.0/assets/logo.svg",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.1/assets/logo.png",
       "strict": true
     }
   ]

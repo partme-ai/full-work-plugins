@@ -8,11 +8,11 @@
       "source": {
         "source": "github",
         "repo": "full-work-plugins/dingtalk-cli-plugin",
-        "ref": "v0.1.0"
+        "ref": "v0.1.1"
       },
       "displayName": "DingTalk CLI (Office Collaboration)",
       "description": "Use the local DingTalk Workspace CLI for messages, docs, tables, calendars, and tasks.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "category": "Productivity",
       "line": "full-work",
       "componentTypes": [
@@ -23,7 +23,7 @@
         "office",
         "cli"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.0/assets/logo.svg",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.1/assets/logo.png",
       "strict": true
     },
     {
@@ -31,11 +31,11 @@
       "source": {
         "source": "github",
         "repo": "full-work-plugins/lark-cli-plugin",
-        "ref": "v0.1.0"
+        "ref": "v0.1.1"
       },
       "displayName": "Lark CLI (Office Collaboration)",
       "description": "Use the local Lark CLI for docs, sheets, Base, messages, and calendars.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "category": "Productivity",
       "line": "full-work",
       "componentTypes": [
@@ -46,7 +46,30 @@
         "office",
         "cli"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.0/assets/logo.svg",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.1/assets/logo.png",
+      "strict": true
+    },
+    {
+      "name": "tencent-meeting-cli",
+      "source": {
+        "source": "github",
+        "repo": "full-work-plugins/tencent-meeting-cli-plugin",
+        "ref": "v0.1.0"
+      },
+      "displayName": "Tencent Meeting CLI (Office Collaboration)",
+      "description": "Use the local Tencent Meeting CLI for OAuth2 authentication, meetings, recordings, and attendee reports.",
+      "version": "0.1.0",
+      "category": "Productivity",
+      "line": "full-work",
+      "componentTypes": [
+        "skills"
+      ],
+      "tags": [
+        "tencent-meeting",
+        "office",
+        "cli"
+      ],
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/tencent-meeting-cli-plugin@v0.1.0/assets/logo.png",
       "strict": true
     },
     {
@@ -54,11 +77,11 @@
       "source": {
         "source": "github",
         "repo": "full-work-plugins/wecom-cli-plugin",
-        "ref": "v0.1.0"
+        "ref": "v0.1.1"
       },
       "displayName": "WeCom CLI (Office Collaboration)",
       "description": "Use the local WeCom CLI for messages, docs, sheets, mail, meetings, and tasks.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "category": "Productivity",
       "line": "full-work",
       "componentTypes": [
@@ -69,7 +92,7 @@
         "office",
         "cli"
       ],
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.0/assets/logo.svg",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.1/assets/logo.png",
       "strict": true
     }
   ]

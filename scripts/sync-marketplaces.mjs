@@ -17,6 +17,8 @@ const localized = (plugin, field) =>
   locale === "zh-CN"
     ? (plugin.localizations?.["zh-CN"]?.[field] ?? plugin[field])
     : plugin[field];
+// Codex 市场卡片面向中文办公用户，使用中文名称与简介；其他渠道仍按 --locale 生成。
+const codexLocalized = (plugin, field) => plugin.localizations?.["zh-CN"]?.[field] ?? plugin[field];
 const remoteMode = process.argv.includes("--remote");
 const remotePluginIds = new Set(
   process.argv
@@ -48,11 +50,11 @@ const codex = {
     line: plugin.line,
     ...(plugin.componentTypes ? { componentTypes: plugin.componentTypes } : {}),
     version: plugin.version,
-    description: localized(plugin, "description"),
+    description: codexLocalized(plugin, "description"),
     icon: rawLogo(plugin),
     interface: {
-      displayName: localized(plugin, "displayName"),
-      shortDescription: localized(plugin, "shortDescription"),
+      displayName: codexLocalized(plugin, "displayName"),
+      shortDescription: codexLocalized(plugin, "shortDescription"),
       logo: rawLogo(plugin)
     }
   })),

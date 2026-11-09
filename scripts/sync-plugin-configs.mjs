@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // 渠道单语：--locale=en 生成 GitHub 英文产物；--locale=zh-CN 生成 AtomGit 中文产物。
-// catalog.json 是唯一双语源；产物里的 displayName / shortDescription / description
-// 只保留当前渠道语言，displayName_i18n / description_i18n 也只写当前语言。
+// catalog.json 是唯一双语源；基础展示字段按 --locale 生成，
+// displayName_i18n / description_i18n 同时保留英语和中文，供宿主选择。
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -45,7 +45,10 @@ const pick = (plugin, field) => {
   }
   return value;
 };
-const i18n = (plugin, field) => ({ [locale]: pick(plugin, field) });
+const i18n = (plugin, field) => ({
+  en: plugin[field],
+  "zh-CN": plugin.localizations?.["zh-CN"]?.[field] ?? plugin[field]
+});
 
 let written = 0;
 for (const plugin of pool) {

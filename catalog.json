@@ -8,7 +8,7 @@
       "displayName": "DingTalk CLI (Office Collaboration)",
       "repository": "full-work-plugins/dingtalk-cli-plugin",
       "localDirectory": "dingtalk-cli-plugin",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "category": "Productivity",
       "line": "full-work",
       "componentTypes": [
@@ -23,19 +23,19 @@
       ],
       "localizations": {
         "zh-CN": {
-          "displayName": "DingTalk CLI（办公协作）",
-          "description": "通过本机钉钉 Workspace CLI 处理消息、文档、表格、日程和待办。",
-          "shortDescription": "本机 CLI 办理钉钉消息、文档与日程。"
+          "displayName": "钉钉 CLI",
+          "description": "钉钉 Workspace CLI 工作流：OAuth/设备授权、组织账号验证与消息、文档、日程操作。",
+          "shortDescription": "钉钉 Workspace CLI 工作流：OAuth/设备授权、组织账号验证与消息、文档、日程操作。"
         }
       },
-      "logo": "assets/logo.svg"
+      "logo": "assets/logo.png"
     },
     {
       "id": "lark-cli",
       "displayName": "Lark CLI (Office Collaboration)",
       "repository": "full-work-plugins/lark-cli-plugin",
       "localDirectory": "lark-cli-plugin",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "category": "Productivity",
       "line": "full-work",
       "componentTypes": [
@@ -50,19 +50,46 @@
       ],
       "localizations": {
         "zh-CN": {
-          "displayName": "Lark CLI（办公协作）",
-          "description": "通过本机飞书 CLI 处理文档、表格、多维表格、消息和日程。",
-          "shortDescription": "本机 CLI 办理飞书文档、多维表格与日程。"
+          "displayName": "飞书 CLI",
+          "description": "Lark CLI 工作流：覆盖文档、表格、多维表格、日历、消息等办公资源，并引导应用配置与 OAuth 登录。",
+          "shortDescription": "Lark CLI 工作流：覆盖文档、表格、多维表格、日历、消息等办公资源，并引导应用配置与 OAuth 登录。"
         }
       },
-      "logo": "assets/logo.svg"
+      "logo": "assets/logo.png"
+    },
+    {
+      "id": "tencent-meeting-cli",
+      "displayName": "Tencent Meeting CLI (Office Collaboration)",
+      "repository": "full-work-plugins/tencent-meeting-cli-plugin",
+      "localDirectory": "tencent-meeting-cli-plugin",
+      "version": "0.1.0",
+      "category": "Productivity",
+      "line": "full-work",
+      "componentTypes": [
+        "skills"
+      ],
+      "description": "Use the local Tencent Meeting CLI for OAuth2 authentication, meetings, recordings, and attendee reports.",
+      "shortDescription": "Tencent Meeting meetings and recordings via local CLI.",
+      "tags": [
+        "tencent-meeting",
+        "office",
+        "cli"
+      ],
+      "localizations": {
+        "zh-CN": {
+          "displayName": "腾讯会议 CLI",
+          "description": "腾讯会议 CLI 工作流：OAuth2 授权、会议管理、录制管理和参会报告查询。",
+          "shortDescription": "腾讯会议 CLI 工作流：OAuth2 授权、会议管理、录制管理和参会报告查询。"
+        }
+      },
+      "logo": "assets/logo.png"
     },
     {
       "id": "wecom-cli",
       "displayName": "WeCom CLI (Office Collaboration)",
       "repository": "full-work-plugins/wecom-cli-plugin",
       "localDirectory": "wecom-cli-plugin",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "category": "Productivity",
       "line": "full-work",
       "componentTypes": [
@@ -77,12 +104,12 @@
       ],
       "localizations": {
         "zh-CN": {
-          "displayName": "WeCom CLI（办公协作）",
-          "description": "通过本机企业微信 CLI 处理消息、文档、表格、邮件、会议和待办。",
-          "shortDescription": "本机 CLI 办理企业微信消息、邮件与会议。"
+          "displayName": "企业微信 CLI",
+          "description": "企业微信 CLI 工作流：覆盖消息、文档、表格、邮件、日历、会议、通讯录和待办，并支持扫码授权。",
+          "shortDescription": "企业微信 CLI 工作流：覆盖消息、文档、表格、邮件、日历、会议、通讯录和待办，并支持扫码授权。"
         }
       },
-      "logo": "assets/logo.svg"
+      "logo": "assets/logo.png"
     }
   ],
   "candidatePlugins": []

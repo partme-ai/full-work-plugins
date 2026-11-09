@@ -11,7 +11,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/dingtalk-cli-plugin.git",
-        "ref": "v0.1.0"
+        "ref": "v0.1.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -22,13 +22,13 @@
       "componentTypes": [
         "skills"
       ],
-      "version": "0.1.0",
-      "description": "Use the local DingTalk Workspace CLI for messages, docs, tables, calendars, and tasks.",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.0/assets/logo.svg",
+      "version": "0.1.1",
+      "description": "钉钉 Workspace CLI 工作流：OAuth/设备授权、组织账号验证与消息、文档、日程操作。",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.1/assets/logo.png",
       "interface": {
-        "displayName": "DingTalk CLI (Office Collaboration)",
-        "shortDescription": "DingTalk messages, documents, and calendars via local CLI.",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.0/assets/logo.svg"
+        "displayName": "钉钉 CLI",
+        "shortDescription": "钉钉 Workspace CLI 工作流：OAuth/设备授权、组织账号验证与消息、文档、日程操作。",
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.1/assets/logo.png"
       }
     },
     {
@@ -36,6 +36,31 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/lark-cli-plugin.git",
+        "ref": "v0.1.1"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity",
+      "line": "full-work",
+      "componentTypes": [
+        "skills"
+      ],
+      "version": "0.1.1",
+      "description": "Lark CLI 工作流：覆盖文档、表格、多维表格、日历、消息等办公资源，并引导应用配置与 OAuth 登录。",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.1/assets/logo.png",
+      "interface": {
+        "displayName": "飞书 CLI",
+        "shortDescription": "Lark CLI 工作流：覆盖文档、表格、多维表格、日历、消息等办公资源，并引导应用配置与 OAuth 登录。",
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.1/assets/logo.png"
+      }
+    },
+    {
+      "name": "tencent-meeting-cli",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/full-work-plugins/tencent-meeting-cli-plugin.git",
         "ref": "v0.1.0"
       },
       "policy": {
@@ -48,12 +73,12 @@
         "skills"
       ],
       "version": "0.1.0",
-      "description": "Use the local Lark CLI for docs, sheets, Base, messages, and calendars.",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.0/assets/logo.svg",
+      "description": "腾讯会议 CLI 工作流：OAuth2 授权、会议管理、录制管理和参会报告查询。",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/tencent-meeting-cli-plugin@v0.1.0/assets/logo.png",
       "interface": {
-        "displayName": "Lark CLI (Office Collaboration)",
-        "shortDescription": "Lark documents, Base, and calendars via local CLI.",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.0/assets/logo.svg"
+        "displayName": "腾讯会议 CLI",
+        "shortDescription": "腾讯会议 CLI 工作流：OAuth2 授权、会议管理、录制管理和参会报告查询。",
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/tencent-meeting-cli-plugin@v0.1.0/assets/logo.png"
       }
     },
     {
@@ -61,7 +86,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/wecom-cli-plugin.git",
-        "ref": "v0.1.0"
+        "ref": "v0.1.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -72,13 +97,13 @@
       "componentTypes": [
         "skills"
       ],
-      "version": "0.1.0",
-      "description": "Use the local WeCom CLI for messages, docs, sheets, mail, meetings, and tasks.",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.0/assets/logo.svg",
+      "version": "0.1.1",
+      "description": "企业微信 CLI 工作流：覆盖消息、文档、表格、邮件、日历、会议、通讯录和待办，并支持扫码授权。",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.1/assets/logo.png",
       "interface": {
-        "displayName": "WeCom CLI (Office Collaboration)",
-        "shortDescription": "WeCom messages, mail, and meetings via local CLI.",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.0/assets/logo.svg"
+        "displayName": "企业微信 CLI",
+        "shortDescription": "企业微信 CLI 工作流：覆盖消息、文档、表格、邮件、日历、会议、通讯录和待办，并支持扫码授权。",
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.1/assets/logo.png"
       }
     }
   ],

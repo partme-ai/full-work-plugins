@@ -4,21 +4,27 @@
   "plugins": [
     {
       "id": "dingtalk-cli",
-      "displayName": "DingTalk CLI（办公协作）",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.0/assets/logo.svg",
-      "source": "https://github.com/full-work-plugins/dingtalk-cli-plugin/releases/tag/v0.1.0"
+      "displayName": "钉钉 CLI",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.1/assets/logo.png",
+      "source": "https://github.com/full-work-plugins/dingtalk-cli-plugin/releases/tag/v0.1.1"
     },
     {
       "id": "lark-cli",
-      "displayName": "Lark CLI（办公协作）",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.0/assets/logo.svg",
-      "source": "https://github.com/full-work-plugins/lark-cli-plugin/releases/tag/v0.1.0"
+      "displayName": "飞书 CLI",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.1/assets/logo.png",
+      "source": "https://github.com/full-work-plugins/lark-cli-plugin/releases/tag/v0.1.1"
+    },
+    {
+      "id": "tencent-meeting-cli",
+      "displayName": "腾讯会议 CLI",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/tencent-meeting-cli-plugin@v0.1.0/assets/logo.png",
+      "source": "https://github.com/full-work-plugins/tencent-meeting-cli-plugin/releases/tag/v0.1.0"
     },
     {
       "id": "wecom-cli",
-      "displayName": "WeCom CLI（办公协作）",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.0/assets/logo.svg",
-      "source": "https://github.com/full-work-plugins/wecom-cli-plugin/releases/tag/v0.1.0"
+      "displayName": "企业微信 CLI",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.1/assets/logo.png",
+      "source": "https://github.com/full-work-plugins/wecom-cli-plugin/releases/tag/v0.1.1"
     }
   ]
 }

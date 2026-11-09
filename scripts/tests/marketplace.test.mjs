@@ -36,3 +36,17 @@ test("candidate plugins remain separate from public host catalogs", () => {
     }
   }
 });
+
+test("Codex office cards use Chinese names, descriptions, and brand icons", () => {
+  const cards = read(".agents/plugins/marketplace.json").plugins;
+  assert.equal(cards.length, 4);
+  for (const plugin of catalog.plugins) {
+    const card = cards.find((item) => item.name === plugin.id);
+    assert.ok(card, plugin.id);
+    assert.equal(card.interface.displayName, plugin.localizations["zh-CN"].displayName);
+    assert.equal(card.interface.shortDescription, plugin.localizations["zh-CN"].shortDescription);
+    assert.equal(card.description, plugin.localizations["zh-CN"].description);
+    assert.equal(card.icon, `https://cdn.jsdelivr.net/gh/${plugin.repository}@v${plugin.version}/assets/logo.png`);
+    assert.equal(card.interface.logo, card.icon);
+  }
+});
