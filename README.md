@@ -10,7 +10,7 @@
 
 ## 当前状态与本地使用
 
-`catalog.json` 中的三项属于 `local_candidate`：本地插件包可安装并触发各自的 setup/cli Skill；尚未创建和发布独立远端仓库与版本 Release。因此它们尚未进入面向公网的 Codex、ZCode、Kimi 市场清单，不能把目录中的预定仓库名当成已发布地址。
+`catalog.json` 中的三项属于 `local_candidate`：本地插件包可安装并触发各自的 setup/use Skill；独立远端仓库已有 feature 分支，但尚未发布版本 Release。因此它们尚未进入面向公网的 Codex、ZCode、Kimi 市场清单，不能把 feature 分支当成已发布版本。
 
 在支持本地插件安装的宿主中，选择对应的 `full-work-plugins-repositories/<name>-plugin` 目录；先运行 `<name>-setup` 检查本机 CLI 与账号，再用 `<name>-use` 处理任务。插件不附带 CLI 二进制或凭证；安装 CLI、登录和远端写操作按 Skill 提示完成。没有账号时可以验证结构与帮助，不能声称业务调用可用。
 
