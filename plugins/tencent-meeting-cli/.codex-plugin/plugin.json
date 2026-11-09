@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "tencent-meeting-cli",
+  "version": "0.1.0",
+  "description": "Use the local Tencent Meeting CLI for OAuth2 authentication, meetings, recordings, and attendee reports.",
+  "author": {
+    "name": "PartMe.AI"
+  },
+  "homepage": "https://github.com/full-work-plugins/tencent-meeting-cli-plugin",
+  "repository": "https://github.com/full-work-plugins/tencent-meeting-cli-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "tencent-meeting",
+    "tencentmeeting",
+    "meeting",
+    "cli",
+    "oauth2"
+  ],
+  "interface": {
+    "displayName": "腾讯会议 CLI",
+    "shortDescription": "腾讯会议 CLI 工作流：OAuth2 授权、会议管理、录制管理和参会报告查询。",
+    "logo": "./assets/logo.png",
+    "logoDark": "./assets/logo.png",
+    "composerIcon": "./assets/logo.png",
+    "composerIconDark": "./assets/logo.png"
+  }
+}

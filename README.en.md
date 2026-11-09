@@ -19,7 +19,7 @@ The four independent repositories publish pinned Releases. The global and Chines
 
 `catalog.json` is the single source for marketplace metadata. `candidatePlugins` tracks local candidates; only verified, released entries under `plugins` are emitted to the public host manifests. The generation and validation scripts are adapted from [Full Stack Plugins at `6d7cc12`](https://github.com/partme-ai/full-stack-plugins/tree/6d7cc1229ec9b9b62c3adeac527d5692c7361475). The generated files are `.agents/plugins/marketplace.json` (Codex), `marketplace.json` (ZCode), `kimi-marketplace.json` (Kimi), and the corresponding `cn-marketplace/` and `atomgit-marketplace/` channel outputs. `dsh/index.json` is a separate generated index. Plugin code lives in sibling repositories under `full-work-plugins-repositories/`.
 
-The public manifests now contain four plugins. The Chinese catalogs continue to use verified GitHub Release sources; Gitee and AtomGit mirrors have not been published.
+The public manifests now contain four plugins. Codex uses generated local package snapshots under `plugins/` so uninstalled cards can resolve branded images; the independently released package repositories remain the source of truth. The Chinese catalogs continue to use verified GitHub Release sources; Gitee and AtomGit mirrors have not been published.
 
 ## Validation and release gate
 

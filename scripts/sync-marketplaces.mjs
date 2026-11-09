@@ -41,9 +41,8 @@ const codex = {
   plugins: catalog.plugins.map((plugin) => ({
     name: plugin.id,
     source: {
-      source: "url",
-      url: `https://github.com/${plugin.repository}.git`,
-      ref: releaseRef(plugin)
+      source: "local",
+      path: `./plugins/${plugin.id}`
     },
     policy: { installation: "AVAILABLE", authentication: "ON_USE" },
     category: plugin.codexCategory ?? plugin.category,

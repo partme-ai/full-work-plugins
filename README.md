@@ -34,12 +34,13 @@ full-work-plugins/
 └── scripts/                             # 生成、校验与后续发版工具
 ```
 
-插件实现只放在相邻的 `full-work-plugins-repositories/<插件名>-plugin/` 中。各插件仓维护 `.codex-plugin/plugin.json`、`.claude-plugin/plugin.json`、`.zcode-plugin/plugin.json`、`kimi.plugin.json`、`plugin.json` 和 `skills/`。中文清单目前仍使用已验证的 GitHub Release 安装源；Gitee 与 AtomGit 镜像尚未发布，不在清单中伪造镜像地址。
+插件实现的事实源在相邻的 `full-work-plugins-repositories/<插件名>-plugin/` 中。`plugins/` 保存从固定 Release 生成的 Codex 本地分发包；Codex 读取包内的图标和中文展示字段，ZCode、Kimi 仍引用独立仓库。不要直接修改生成包。各插件仓维护 `.codex-plugin/plugin.json`、`.claude-plugin/plugin.json`、`.zcode-plugin/plugin.json`、`kimi.plugin.json`、`plugin.json` 和 `skills/`。中文清单目前仍使用已验证的 GitHub Release 安装源；Gitee 与 AtomGit 镜像尚未发布，不在清单中伪造镜像地址。
 
 ## 校验与后续发版
 
 ```bash
 python3 scripts/validate-candidates.py --catalog-only
+node scripts/sync-codex-bundles.mjs
 node scripts/sync-marketplaces.mjs --remote
 node scripts/sync-cn-marketplace.mjs
 node scripts/sync-cn-marketplace.mjs --channel=atomgit

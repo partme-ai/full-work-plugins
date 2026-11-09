@@ -48,5 +48,12 @@ test("Codex office cards use Chinese names, descriptions, and brand icons", () =
     assert.equal(card.description, plugin.localizations["zh-CN"].description);
     assert.equal(card.icon, `https://cdn.jsdelivr.net/gh/${plugin.repository}@v${plugin.version}/assets/logo.png`);
     assert.equal(card.interface.logo, card.icon);
+    assert.deepEqual(card.source, { source: "local", path: `./plugins/${plugin.id}` });
+    const bundle = path.join(root, "plugins", plugin.id);
+    const manifest = JSON.parse(fs.readFileSync(path.join(bundle, "plugin.json"), "utf8"));
+    const ui = manifest.extensions["com.openai"].interface;
+    assert.equal(ui.displayName, plugin.localizations["zh-CN"].displayName);
+    assert.equal(ui.shortDescription, plugin.localizations["zh-CN"].shortDescription);
+    assert.ok(fs.statSync(path.join(bundle, "assets", "logo.png")).size > 0);
   }
 });

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "dingtalk-cli",
+  "version": "0.1.1",
+  "description": "Use the local DingTalk Workspace CLI for messages, docs, tables, calendars, and tasks.",
+  "author": {
+    "name": "PartMe.AI"
+  },
+  "homepage": "https://github.com/full-work-plugins/dingtalk-cli-plugin",
+  "repository": "https://github.com/full-work-plugins/dingtalk-cli-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "dingtalk",
+    "dws",
+    "workspace",
+    "chat",
+    "docs",
+    "calendar",
+    "tasks"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "钉钉 CLI",
+        "shortDescription": "钉钉 Workspace CLI 工作流：OAuth/设备授权、组织账号验证与消息、文档、日程操作。",
+        "logo": "./assets/logo.png",
+        "logoDark": "./assets/logo.png",
+        "composerIcon": "./assets/logo.png",
+        "composerIconDark": "./assets/logo.png"
+      }
+    }
+  }
+}

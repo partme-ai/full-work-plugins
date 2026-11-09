@@ -1,0 +1,31 @@
+{
+  "name": "lark-cli",
+  "version": "0.1.1",
+  "description": "Use the local Lark CLI for docs, sheets, Base, messages, and calendars.",
+  "author": {
+    "name": "PartMe.AI"
+  },
+  "homepage": "https://github.com/full-work-plugins/lark-cli-plugin",
+  "repository": "https://github.com/full-work-plugins/lark-cli-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "feishu",
+    "lark",
+    "lark-cli",
+    "docs",
+    "sheets",
+    "base",
+    "calendar",
+    "messaging"
+  ],
+  "displayName": "Lark CLI (Office Collaboration)",
+  "description_i18n": {
+    "en": "Use the local Lark CLI for docs, sheets, Base, messages, and calendars.",
+    "zh-CN": "Lark CLI 工作流：覆盖文档、表格、多维表格、日历、消息等办公资源，并引导应用配置与 OAuth 登录。"
+  },
+  "skills": "./skills/",
+  "displayName_i18n": {
+    "en": "Lark CLI (Office Collaboration)",
+    "zh-CN": "飞书 CLI"
+  }
+}

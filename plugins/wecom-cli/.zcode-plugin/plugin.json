@@ -1,0 +1,31 @@
+{
+  "name": "wecom-cli",
+  "version": "0.1.1",
+  "description": "Use the local WeCom CLI for messages, docs, sheets, mail, meetings, and tasks.",
+  "author": {
+    "name": "PartMe.AI"
+  },
+  "homepage": "https://github.com/full-work-plugins/wecom-cli-plugin",
+  "repository": "https://github.com/full-work-plugins/wecom-cli-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "wecom",
+    "wechat-work",
+    "wecom-cli",
+    "message",
+    "docs",
+    "sheets",
+    "calendar",
+    "todo"
+  ],
+  "displayName": "WeCom CLI (Office Collaboration)",
+  "description_i18n": {
+    "en": "Use the local WeCom CLI for messages, docs, sheets, mail, meetings, and tasks.",
+    "zh-CN": "企业微信 CLI 工作流：覆盖消息、文档、表格、邮件、日历、会议、通讯录和待办，并支持扫码授权。"
+  },
+  "skills": "./skills/",
+  "displayName_i18n": {
+    "en": "WeCom CLI (Office Collaboration)",
+    "zh-CN": "企业微信 CLI"
+  }
+}
