@@ -34,16 +34,25 @@ const rawLogo = (plugin) =>
 const githubReleaseSource = (plugin) =>
   `https://github.com/${plugin.repository}/releases/tag/${releaseRef(plugin)}`;
 
+const candidates = (catalog.candidatePlugins ?? []).filter(plugin => plugin.status === "release_candidate_installable");
+const marketplacePlugins = [...catalog.plugins, ...candidates];
+const craftReleases = JSON.parse(fs.readFileSync(path.join(root, "docs/craft-marketplace-candidate-releases.json"), "utf8"));
+const zcodeSource = (plugin) => {
+  const release = craftReleases.find(entry => entry.plugin === plugin.id && entry.version === plugin.version);
+  if (!release) return { source: "github", repo: plugin.repository, ref: releaseRef(plugin) };
+  if (release.maximumZipEntryBytes > 50 * 1024 * 1024) return { source: "github", repo: plugin.repository, ref: releaseRef(plugin) };
+  return { source: "url", type: "zip", url: `https://github.com/${plugin.repository}/releases/download/${releaseRef(plugin)}/${release.archive}`, sha256: release.archiveSha256, path: `${plugin.id}-plugin` };
+};
+
 const codex = {
   name: catalog.name,
   description: catalog.description,
   owner: { name: "PartMe.AI", url: "https://github.com/partme-ai" },
-  plugins: catalog.plugins.map((plugin) => ({
+  plugins: marketplacePlugins.map((plugin) => ({
     name: plugin.id,
-    source: {
-      source: "local",
-      path: `./plugins/${plugin.id}`
-    },
+    source: candidates.some(candidate => candidate.id === plugin.id)
+      ? { source: "url", url: `https://github.com/${plugin.repository}.git`, ref: releaseRef(plugin) }
+      : { source: "local", path: `./plugins/${plugin.id}` },
     policy: { installation: "AVAILABLE", authentication: "ON_USE" },
     category: plugin.codexCategory ?? plugin.category,
     line: plugin.line,
@@ -64,9 +73,9 @@ const zcode = {
   name: catalog.name,
   displayName: catalog.displayName,
   description: catalog.description,
-  plugins: catalog.plugins.map((plugin) => ({
+  plugins: marketplacePlugins.map((plugin) => ({
     name: plugin.id,
-    source: { source: "github", repo: plugin.repository, ref: releaseRef(plugin) },
+    source: zcodeSource(plugin),
     // ZCode 列表以 displayName 为准；缺失时会退化成插件 id，因此每条都必须写。
     displayName: localized(plugin, "displayName"),
     description: localized(plugin, "description"),
@@ -83,7 +92,7 @@ const zcode = {
 const kimi = {
   version: "2",
   displayName: catalog.displayName,
-  plugins: catalog.plugins.map((plugin) => ({
+  plugins: marketplacePlugins.map((plugin) => ({
     id: plugin.id,
     displayName: plugin.displayName,
     icon: rawLogo(plugin),
