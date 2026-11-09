@@ -1,0 +1,9 @@
+{
+  "name": "soundcraft",
+  "version": "0.1.0-dev.20261109.5",
+  "archiveRoot": "soundcraft-plugin",
+  "url": "https://github.com/full-aigc-plugins/soundcraft-plugin/releases/download/v0.1.0-dev.20261109.5/soundcraft-plugin-0.1.0-dev.20261109.5.zip",
+  "sha256": "73cea91c189b170c712fe65fd7448c5cc507063da2d47e7f34a858e0c07b0778",
+  "sourceRepository": "full-aigc-plugins/soundcraft-plugin",
+  "sourceCommit": "3feceb9344e8b12002c33f0559e4c2a928313ad5"
+}

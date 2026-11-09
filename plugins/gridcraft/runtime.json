@@ -1,0 +1,9 @@
+{
+  "name": "gridcraft",
+  "version": "0.1.0-dev.20261109.5",
+  "archiveRoot": "gridcraft-plugin",
+  "url": "https://github.com/full-aigc-plugins/gridcraft-plugin/releases/download/v0.1.0-dev.20261109.5/gridcraft-plugin-0.1.0-dev.20261109.5.zip",
+  "sha256": "ce97e05276174e9b02a730196b5befda35eef5c29fc110d9c25478b4bf26e83e",
+  "sourceRepository": "full-aigc-plugins/gridcraft-plugin",
+  "sourceCommit": "84442032dbc12364d680af711ba571d998f8d256"
+}

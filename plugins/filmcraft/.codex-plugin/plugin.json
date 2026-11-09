@@ -1,0 +1,16 @@
+{
+  "name": "filmcraft",
+  "version": "0.1.0-dev.20261018.5",
+  "description": "多机位剪辑、字幕、逐词转录、调色与导出，时间线和素材引用一并交付。",
+  "skills": "./skills/",
+  "mcpServers": "./.codex-plugin/mcp.json",
+  "interface": {
+    "displayName": "FilmCraft（视频剪辑）",
+    "shortDescription": "多机位剪辑、字幕、逐词转录、调色与导出，时间线和素材引用一并交付。",
+    "category": "Creativity",
+    "logo": "./assets/official-logo.png",
+    "logoDark": "./assets/official-logo.png",
+    "composerIcon": "./assets/official-logo.png",
+    "composerIconDark": "./assets/official-logo.png"
+  }
+}

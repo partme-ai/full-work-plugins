@@ -21,7 +21,7 @@ const locale = channel.locale;
 const localized = (plugin, field) =>
   plugin.localizations?.[locale]?.[field] ?? plugin[field];
 
-const plugins = [...catalog.plugins]
+const plugins = [...catalog.plugins, ...(catalog.candidatePlugins ?? []).filter(plugin => plugin.status === "release_candidate_installable")]
   .sort((left, right) => left.id.localeCompare(right.id, "en"));
 
 const repoPath = (plugin) => {

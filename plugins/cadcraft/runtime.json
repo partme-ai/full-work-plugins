@@ -1,0 +1,9 @@
+{
+  "name": "cadcraft",
+  "version": "0.1.0-dev.20261109.5",
+  "archiveRoot": "cadcraft-plugin",
+  "url": "https://github.com/full-aigc-plugins/cadcraft-plugin/releases/download/v0.1.0-dev.20261109.5/cadcraft-plugin-0.1.0-dev.20261109.5.zip",
+  "sha256": "9bd66bdc000349160a642cb46b823c54b18506927f95a8a225e9592f9e0cf5aa",
+  "sourceRepository": "full-aigc-plugins/cadcraft-plugin",
+  "sourceCommit": "6f381dc36cb9087cf125ca688c722d552500051a"
+}
