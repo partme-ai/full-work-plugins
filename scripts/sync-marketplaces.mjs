@@ -79,9 +79,9 @@ const zcode = {
     displayName: codexLocalized(plugin, "displayName"),
     description: codexLocalized(plugin, "description"),
     version: plugin.version,
-    category: plugin.category,
+    category: plugin.category === "Productivity" ? "productivity" : plugin.category,
     line: plugin.line,
-    ...(plugin.componentTypes ? { componentTypes: plugin.componentTypes } : {}),
+    ...(plugin.componentTypes ? { componentTypes: plugin.componentTypes.map(type => type === "skills" ? "skill" : type) } : {}),
     tags: plugin.tags,
     icon: rawLogo(plugin),
     strict: true

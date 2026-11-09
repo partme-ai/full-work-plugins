@@ -9,10 +9,10 @@
       "displayName": "钉钉 CLI",
       "description": "钉钉 Workspace CLI 工作流：OAuth/设备授权、组织账号验证与消息、文档、日程操作。",
       "version": "0.1.1",
-      "category": "Productivity",
+      "category": "productivity",
       "line": "full-work",
       "componentTypes": [
-        "skills"
+        "skill"
       ],
       "tags": [
         "dingtalk",
@@ -28,10 +28,10 @@
       "displayName": "飞书 CLI",
       "description": "Lark CLI 工作流：覆盖文档、表格、多维表格、日历、消息等办公资源，并引导应用配置与 OAuth 登录。",
       "version": "0.1.1",
-      "category": "Productivity",
+      "category": "productivity",
       "line": "full-work",
       "componentTypes": [
-        "skills"
+        "skill"
       ],
       "tags": [
         "lark",
@@ -47,10 +47,10 @@
       "displayName": "腾讯会议 CLI",
       "description": "腾讯会议 CLI 工作流：OAuth2 授权、会议管理、录制管理和参会报告查询。",
       "version": "0.1.0",
-      "category": "Productivity",
+      "category": "productivity",
       "line": "full-work",
       "componentTypes": [
-        "skills"
+        "skill"
       ],
       "tags": [
         "tencent-meeting",
@@ -66,10 +66,10 @@
       "displayName": "企业微信 CLI",
       "description": "企业微信 CLI 工作流：覆盖消息、文档、表格、邮件、日历、会议、通讯录和待办，并支持扫码授权。",
       "version": "0.1.1",
-      "category": "Productivity",
+      "category": "productivity",
       "line": "full-work",
       "componentTypes": [
-        "skills"
+        "skill"
       ],
       "tags": [
         "wecom",
@@ -118,7 +118,7 @@
       "displayName": "DeckCraft（演示文稿）",
       "description": "一句话生成可编辑演示文稿：路演、周报、培训和数据叙事，母版、版式与讲稿都能继续改。",
       "version": "0.1.0-dev.20261109.5",
-      "category": "Productivity",
+      "category": "productivity",
       "line": "full-work",
       "componentTypes": [
         "ui"
@@ -251,7 +251,7 @@
       "displayName": "GridCraft（电子表格）",
       "description": "预算、对账、清洗、销售汇总与公式审计：单位和来源保留，公式随时可重算。",
       "version": "0.1.0-dev.20261109.5",
-      "category": "Productivity",
+      "category": "productivity",
       "line": "full-work",
       "componentTypes": [
         "ui"
@@ -305,7 +305,7 @@
       "displayName": "PdfCraft（PDF 处理）",
       "description": "PDF 重排、扫描件 OCR、表单填写、脱敏与印前检查，原件保留，逐页核对。",
       "version": "0.1.0-dev.20261109.4",
-      "category": "Productivity",
+      "category": "productivity",
       "line": "full-work",
       "componentTypes": [
         "ui"
@@ -413,7 +413,7 @@
       "displayName": "WordCraft（文档写作）",
       "description": "周报、纪要、报价、验收报告与简历：样式、目录、页码和题注保持一致，导出可编辑 Word。",
       "version": "0.1.0-dev.20261109.5",
-      "category": "Productivity",
+      "category": "productivity",
       "line": "full-work",
       "componentTypes": [
         "ui"
