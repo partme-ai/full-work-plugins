@@ -1,7 +1,7 @@
 name: Craft office marketplace installation
 on:
   push:
-    paths: ['.github/workflows/craft-market-install.yml', 'scripts/verify-craft-market-install.py', 'scripts/verify-craft-release-zip.py', 'scripts/ci/craft_windows.py', 'scripts/craft-remote-runtime.mjs', 'scripts/sync-craft-codex-shells.py', 'plugins/**', 'catalog.json', '.agents/plugins/marketplace.json', 'docs/craft-marketplace-candidate-releases.json']
+    paths: ['.github/workflows/craft-market-install.yml', 'scripts/verify-craft-market-install.py', 'scripts/verify-craft-release-zip.py', 'scripts/ci/craft_windows.py', 'scripts/craft-remote-runtime.mjs', 'scripts/craft-extract-release.py', 'scripts/sync-craft-codex-shells.py', 'plugins/**', 'catalog.json', '.agents/plugins/marketplace.json', 'docs/craft-marketplace-candidate-releases.json']
   workflow_dispatch: {}
 permissions:
   contents: read

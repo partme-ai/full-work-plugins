@@ -15,6 +15,7 @@ catalog = json.loads((ROOT / 'catalog.json').read_text())
 releases = json.loads((ROOT / 'docs/craft-marketplace-candidate-releases.json').read_text())
 by_release = {(row['plugin'], row['version']): row for row in releases}
 bootstrap = (ROOT / 'scripts/craft-remote-runtime.mjs').read_bytes()
+extractor = (ROOT / 'scripts/craft-extract-release.py').read_bytes()
 
 for plugin in catalog['candidatePlugins']:
     if plugin['status'] != 'release_candidate_installable':
@@ -95,6 +96,7 @@ for plugin in catalog['candidatePlugins']:
             destination.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n')
         (stage / 'scripts').mkdir()
         (stage / 'scripts/remote-runtime.mjs').write_bytes(bootstrap)
+        (stage / 'scripts/extract-release.py').write_bytes(extractor)
         if target.exists():
             shutil.rmtree(target)
         shutil.move(str(stage), target)
