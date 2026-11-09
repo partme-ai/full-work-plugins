@@ -40,8 +40,10 @@ for (const plugin of catalog.plugins) {
   ];
   const content = (relative) => {
     const original = fs.readFileSync(path.join(source, relative));
-    if (!["plugin.json", ".codex-plugin/plugin.json"].includes(relative)) return original;
-    const manifest = JSON.parse(original.toString("utf8"));
+    if (relative.endsWith(".png")) return original;
+    const normalized = original.toString("utf8").replace(/\r\n/g, "\n");
+    if (!["plugin.json", ".codex-plugin/plugin.json"].includes(relative)) return Buffer.from(normalized);
+    const manifest = JSON.parse(normalized);
     const ui = relative === "plugin.json"
       ? manifest.extensions["com.openai"].interface
       : manifest.interface;
@@ -63,7 +65,11 @@ for (const plugin of catalog.plugins) {
       throw new Error(`${plugin.id}: bundled file list differs from published package`);
     }
     for (const relative of entries) {
-      if (!content(relative).equals(fs.readFileSync(path.join(target, relative)))) {
+      const actualContent = fs.readFileSync(path.join(target, relative));
+      const comparable = relative.endsWith(".png")
+        ? actualContent
+        : Buffer.from(actualContent.toString("utf8").replace(/\r\n/g, "\n"));
+      if (!content(relative).equals(comparable)) {
         throw new Error(`${plugin.id}: bundled ${relative} differs from published package`);
       }
     }
