@@ -1,0 +1,9 @@
+{
+  "name": "deckcraft",
+  "version": "0.1.0-dev.20261109.5",
+  "archiveRoot": "deckcraft-plugin",
+  "url": "https://github.com/full-aigc-plugins/deckcraft-plugin/releases/download/v0.1.0-dev.20261109.5/deckcraft-plugin-0.1.0-dev.20261109.5.zip",
+  "sha256": "e3ef4a6fdc1120540041ef8aa45c22e104f2b771eb1f26450c1eb30884aed0b5",
+  "sourceRepository": "full-aigc-plugins/deckcraft-plugin",
+  "sourceCommit": "d0c3ab9ffb193c5c2895b92dc2432402e987953e"
+}

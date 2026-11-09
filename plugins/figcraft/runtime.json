@@ -1,0 +1,9 @@
+{
+  "name": "figcraft",
+  "version": "0.1.0-dev.20261019.2",
+  "archiveRoot": "figcraft-plugin",
+  "url": "https://github.com/full-aigc-plugins/figcraft-plugin/releases/download/v0.1.0-dev.20261019.2/figcraft-plugin-0.1.0-dev.20261019.2.zip",
+  "sha256": "cca70029170d72a6f65a0c4510668c674738143a51a4ba6c36a7dc1caa53e015",
+  "sourceRepository": "full-aigc-plugins/figcraft-plugin",
+  "sourceCommit": "4684d8a8536b21e121ca435de4f52c36888b4c1a"
+}

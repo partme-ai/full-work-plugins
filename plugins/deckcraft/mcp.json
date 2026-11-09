@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "deckcraft-editor": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "scripts/remote-runtime.mjs"
+      ],
+      "cwd": ".",
+      "required": true,
+      "startup_timeout_sec": 180
+    }
+  }
+}

@@ -2,7 +2,7 @@
 
 面向非技术岗位的办公插件线，沿用 [Full Stack Plugins](https://github.com/partme-ai/full-stack-plugins) 的“市场仓 + 独立插件仓”结构。首批提供钉钉、飞书、企业微信和腾讯会议的本机 CLI 工作流，覆盖消息、文档、表格、日历与待办。
 
-办公市场还收录 13 个 Craft 创作插件，当前均为预发布候选。独立仓库与 Release 仍由 [full-aigc-plugins](https://github.com/full-aigc-plugins) 维护；本市场只管理安装入口，不复制体积较大的插件包。
+办公市场还收录 13 个 Craft 创作插件，当前均为预发布候选。独立仓库与 Release 仍由 [full-aigc-plugins](https://github.com/full-aigc-plugins) 维护；本市场提供图标、技能和启动器，不复制完整运行包。
 
 ## 插件目录与来源
 
@@ -13,7 +13,7 @@
 | [企业微信 CLI v0.1.1](https://github.com/full-work-plugins/wecom-cli-plugin/releases/tag/v0.1.1) | `../full-work-plugins-repositories/wecom-cli-plugin` | [WeCom CLI](https://github.com/WecomTeam/wecom-cli) | [ZCode wecom-cli](https://github.com/zai-org/zcode-plugins/tree/0cc58d6/plugins/wecom-cli) |
 | [腾讯会议 CLI v0.1.0](https://github.com/full-work-plugins/tencent-meeting-cli-plugin/releases/tag/v0.1.0) | `../full-work-plugins-repositories/tencent-meeting-cli-plugin` | [Tencent Meeting CLI](https://github.com/TencentCloud/tencentmeeting-cli) | [ZCode tencent-meeting-cli](https://github.com/zai-org/zcode-plugins/tree/0cc58d6/plugins/tencent-meeting-cli) |
 
-CADCraft、DeckCraft、DesignCraft、EffectCraft、FigCraft、FilmCraft、GridCraft、LightCraft、PdfCraft、PhotoCraft、SoundCraft、VectorCraft、WordCraft 的准确仓库、版本、中文展示名和图标路径记录于 [`catalog.json`](catalog.json)；ZIP 资产、SHA-256 与 Release 来源记录于 [`docs/craft-marketplace-candidate-releases.json`](docs/craft-marketplace-candidate-releases.json)。Codex 从固定 Git 标签安装；ZCode 从校验过摘要的 Release ZIP 安装，单个 ZIP 条目超过宿主限制时回退到固定 Git 标签。安装时才下载运行包。
+CADCraft、DeckCraft、DesignCraft、EffectCraft、FigCraft、FilmCraft、GridCraft、LightCraft、PdfCraft、PhotoCraft、SoundCraft、VectorCraft、WordCraft 的准确仓库、版本、中文展示名和图标路径记录于 [`catalog.json`](catalog.json)；ZIP 资产、SHA-256 与 Release 来源记录于 [`docs/craft-marketplace-candidate-releases.json`](docs/craft-marketplace-candidate-releases.json)。Codex 安装本市场的轻量入口，首次启动编辑器时按 SHA-256 下载完整 Release ZIP；ZCode 从校验过摘要的 Release ZIP 安装，单个 ZIP 条目超过宿主限制时回退到固定 Git 标签。Craft 的独立实现仍在原仓库维护。
 
 聚合目录与本地市场的构建方式参考 [ZCode 官方插件仓的市场结构](https://github.com/zai-org/zcode-plugins)：市场清单使用相对 `./plugins/<id>` 来源，完整插件目录随本地分发目录复制。独立插件代码和历史来源见各包仓库；本仓只生成固定版本副本。
 

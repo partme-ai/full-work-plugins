@@ -1,0 +1,9 @@
+{
+  "name": "pdfcraft",
+  "version": "0.1.0-dev.20261109.4",
+  "archiveRoot": "pdfcraft-plugin",
+  "url": "https://github.com/full-aigc-plugins/pdfcraft-plugin/releases/download/v0.1.0-dev.20261109.4/pdfcraft-plugin-0.1.0-dev.20261109.4.zip",
+  "sha256": "2df68b9348ba23ae51288a176bf0a51f48ec6d0d60acc044f7dfe43f82e2a349",
+  "sourceRepository": "full-aigc-plugins/pdfcraft-plugin",
+  "sourceCommit": "b089e827b156d675305c8cab188eae4ca0f61393"
+}

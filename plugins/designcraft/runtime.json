@@ -1,0 +1,9 @@
+{
+  "name": "designcraft",
+  "version": "0.1.0-dev.20261109.5",
+  "archiveRoot": "designcraft-plugin",
+  "url": "https://github.com/full-aigc-plugins/designcraft-plugin/releases/download/v0.1.0-dev.20261109.5/designcraft-plugin-0.1.0-dev.20261109.5.zip",
+  "sha256": "0a9507a4639833a508e6f7c63e8134d9109610b2e002c3c2d0c293d9e8350034",
+  "sourceRepository": "full-aigc-plugins/designcraft-plugin",
+  "sourceCommit": "a96a1f750b1395fde638278e04e9cfcbd8b4140b"
+}
