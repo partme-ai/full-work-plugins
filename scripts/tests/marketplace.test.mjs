@@ -74,6 +74,13 @@ test("Codex office cards use Chinese names, descriptions, and brand icons", () =
 });
 
 test("local ZCode distribution embeds office packages and leaves Craft remote", () => {
+  const publicMarket = read("marketplace.json");
+  for (const plugin of catalog.plugins) {
+    const entry = publicMarket.plugins.find(item => item.name === plugin.id);
+    assert.equal(entry.source, `./plugins/${plugin.id}`);
+    assert.equal(entry.displayName, plugin.localizations["zh-CN"].displayName);
+    assert.equal(entry.description, plugin.localizations["zh-CN"].description);
+  }
   const distribution = read("dist/local-marketplace/marketplace.json");
   for (const plugin of catalog.plugins) {
     const entry = distribution.plugins.find(item => item.name === plugin.id);
