@@ -7,7 +7,7 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 WORKSPACE = ROOT.parent / 'full-work-plugins-repositories'
-catalog = json.loads((ROOT / 'catalog.json').read_text())
+catalog = json.loads((ROOT / 'catalog.json').read_text(encoding='utf-8'))
 catalog_only = '--catalog-only' in sys.argv[1:]
 assert set(sys.argv[1:]) <= {'--catalog-only'}, 'unsupported argument'
 seen = set()
@@ -28,13 +28,13 @@ for plugin in catalog['candidatePlugins']:
     repo = WORKSPACE / plugin['localDirectory']
     assert repo.is_dir(), f'missing {repo}'
     for manifest in ('plugin.json', 'kimi.plugin.json', '.codex-plugin/plugin.json', '.claude-plugin/plugin.json', '.zcode-plugin/plugin.json'):
-        data = json.loads((repo / manifest).read_text())
+        data = json.loads((repo / manifest).read_text(encoding='utf-8'))
         assert data['name'] == name and data['version'] == plugin['version'], manifest
     for kind in ('setup', 'use'):
         skill = f'{name}-{kind}'
-        text = (repo / 'skills' / skill / 'SKILL.md').read_text()
+        text = (repo / 'skills' / skill / 'SKILL.md').read_text(encoding='utf-8')
         assert re.search(rf'^name: {re.escape(skill)}$', text, re.M), skill
         assert '../setup/SKILL.md' not in text, skill
-    notice = (repo / 'THIRD-PARTY-NOTICES.md').read_text()
+    notice = (repo / 'THIRD-PARTY-NOTICES.md').read_text(encoding='utf-8')
     assert 'zai-org/zcode-plugins' in notice and '0cc58d6' in notice, name
 print(f'validated {len(seen)} local candidate {"catalog entries" if catalog_only else "packages"}')
