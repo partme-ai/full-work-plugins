@@ -2,5 +2,75 @@
   "name": "full-work-plugins",
   "displayName": "Full Work Plugins",
   "description": "Full Work plugin marketplace for Codex, ZCode, and Kimi Code: enterprise messaging, documents, spreadsheets, calendars, and tasks.",
-  "plugins": []
+  "plugins": [
+    {
+      "name": "dingtalk-cli",
+      "source": {
+        "source": "github",
+        "repo": "full-work-plugins/dingtalk-cli-plugin",
+        "ref": "v0.1.0"
+      },
+      "displayName": "DingTalk CLI (Office Collaboration)",
+      "description": "Use the local DingTalk Workspace CLI for messages, docs, tables, calendars, and tasks.",
+      "version": "0.1.0",
+      "category": "Productivity",
+      "line": "full-work",
+      "componentTypes": [
+        "skills"
+      ],
+      "tags": [
+        "dingtalk",
+        "office",
+        "cli"
+      ],
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.0/assets/logo.svg",
+      "strict": true
+    },
+    {
+      "name": "lark-cli",
+      "source": {
+        "source": "github",
+        "repo": "full-work-plugins/lark-cli-plugin",
+        "ref": "v0.1.0"
+      },
+      "displayName": "Lark CLI (Office Collaboration)",
+      "description": "Use the local Lark CLI for docs, sheets, Base, messages, and calendars.",
+      "version": "0.1.0",
+      "category": "Productivity",
+      "line": "full-work",
+      "componentTypes": [
+        "skills"
+      ],
+      "tags": [
+        "lark",
+        "office",
+        "cli"
+      ],
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.0/assets/logo.svg",
+      "strict": true
+    },
+    {
+      "name": "wecom-cli",
+      "source": {
+        "source": "github",
+        "repo": "full-work-plugins/wecom-cli-plugin",
+        "ref": "v0.1.0"
+      },
+      "displayName": "WeCom CLI (Office Collaboration)",
+      "description": "Use the local WeCom CLI for messages, docs, sheets, mail, meetings, and tasks.",
+      "version": "0.1.0",
+      "category": "Productivity",
+      "line": "full-work",
+      "componentTypes": [
+        "skills"
+      ],
+      "tags": [
+        "wecom",
+        "office",
+        "cli"
+      ],
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.0/assets/logo.svg",
+      "strict": true
+    }
+  ]
 }

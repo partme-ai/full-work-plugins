@@ -304,9 +304,15 @@ for (let index = 0; index < catalog.plugins.length; index += 1) {
     if (relative === ".zcode-plugin/plugin.json" && manifest.displayName !== localized(plugin, "displayName")) {
       errors.push(`${plugin.id}: ${relative} displayName is ${manifest.displayName}`);
     }
-    if (relative === ".zcode-plugin/plugin.json" && manifest.displayName_i18n
-        && JSON.stringify(manifest.displayName_i18n) !== JSON.stringify({ [locale]: localized(plugin, "displayName") })) {
-      errors.push(`${plugin.id}: ${relative} displayName_i18n differs`);
+    if (relative === ".zcode-plugin/plugin.json" && manifest.displayName_i18n) {
+      for (const [language, label] of Object.entries(manifest.displayName_i18n)) {
+        const expected = language === "en"
+          ? plugin.displayName
+          : plugin.localizations?.[language]?.displayName;
+        if (!expected || label !== expected) {
+          errors.push(`${plugin.id}: ${relative} displayName_i18n.${language} differs`);
+        }
+      }
     }
     if (relative === "kimi.plugin.json") {
       if (manifest.interface?.displayName !== localized(plugin, "displayName")) {

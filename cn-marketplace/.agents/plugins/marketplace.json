@@ -1,12 +1,88 @@
 {
   "name": "full-work-plugins-cn",
-  "description": "Full Work 插件市场（Gitee 镜像）：面向 Codex、ZCode 与 Kimi Code，覆盖企业沟通、文档、表格、日历与待办。",
+  "description": "Full Work 插件市场中文清单：通过已验证的 GitHub Release 安装钉钉、飞书与企业微信办公插件。",
   "owner": {
     "name": "PartMe.AI",
     "url": "https://github.com/partme-ai"
   },
-  "plugins": [],
+  "plugins": [
+    {
+      "name": "dingtalk-cli",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/full-work-plugins/dingtalk-cli-plugin.git",
+        "ref": "v0.1.0"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity",
+      "line": "full-work",
+      "componentTypes": [
+        "skills"
+      ],
+      "version": "0.1.0",
+      "description": "通过本机钉钉 Workspace CLI 处理消息、文档、表格、日程和待办。",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.0/assets/logo.svg",
+      "interface": {
+        "displayName": "DingTalk CLI（办公协作）",
+        "shortDescription": "本机 CLI 办理钉钉消息、文档与日程。",
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.0/assets/logo.svg"
+      }
+    },
+    {
+      "name": "lark-cli",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/full-work-plugins/lark-cli-plugin.git",
+        "ref": "v0.1.0"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity",
+      "line": "full-work",
+      "componentTypes": [
+        "skills"
+      ],
+      "version": "0.1.0",
+      "description": "通过本机飞书 CLI 处理文档、表格、多维表格、消息和日程。",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.0/assets/logo.svg",
+      "interface": {
+        "displayName": "Lark CLI（办公协作）",
+        "shortDescription": "本机 CLI 办理飞书文档、多维表格与日程。",
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.0/assets/logo.svg"
+      }
+    },
+    {
+      "name": "wecom-cli",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/full-work-plugins/wecom-cli-plugin.git",
+        "ref": "v0.1.0"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity",
+      "line": "full-work",
+      "componentTypes": [
+        "skills"
+      ],
+      "version": "0.1.0",
+      "description": "通过本机企业微信 CLI 处理消息、文档、表格、邮件、会议和待办。",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.0/assets/logo.svg",
+      "interface": {
+        "displayName": "WeCom CLI（办公协作）",
+        "shortDescription": "本机 CLI 办理企业微信消息、邮件与会议。",
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.0/assets/logo.svg"
+      }
+    }
+  ],
   "interface": {
-    "displayName": "Full Work 插件（Gitee 镜像）"
+    "displayName": "Full Work 插件（中文）"
   }
 }

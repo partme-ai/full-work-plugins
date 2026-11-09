@@ -27,4 +27,12 @@ test("candidate plugins remain separate from public host catalogs", () => {
     const actual = new Set(read(file).plugins.map((plugin) => plugin[key]));
     assert.deepEqual(actual, published, file);
   }
+  for (const plugin of catalog.plugins) {
+    for (const file of ["cn-marketplace/marketplace.json", "atomgit-marketplace/marketplace.json"]) {
+      const entry = read(file).plugins.find((item) => item.name === plugin.id);
+      assert.equal(entry.source.url, `https://github.com/${plugin.repository}.git`);
+      assert.equal(entry.source.ref, `v${plugin.version}`);
+      assert.ok(entry.icon.startsWith(`https://cdn.jsdelivr.net/gh/${plugin.repository}@v${plugin.version}/`));
+    }
+  }
 });

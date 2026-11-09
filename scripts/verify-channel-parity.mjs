@@ -21,7 +21,10 @@ const identity = (file, key) => {
 const pairs = [
   ["marketplace.json", "cn-marketplace/marketplace.json", "name"],
   ["kimi-marketplace.json", "cn-marketplace/kimi-marketplace.json", "id"],
-  [".agents/plugins/marketplace.json", "cn-marketplace/.agents/plugins/marketplace.json", "name"]
+  [".agents/plugins/marketplace.json", "cn-marketplace/.agents/plugins/marketplace.json", "name"],
+  ["marketplace.json", "atomgit-marketplace/marketplace.json", "name"],
+  ["kimi-marketplace.json", "atomgit-marketplace/kimi-marketplace.json", "id"],
+  [".agents/plugins/marketplace.json", "atomgit-marketplace/.agents/plugins/marketplace.json", "name"]
 ];
 
 const errors = [];
@@ -48,4 +51,4 @@ if (errors.length > 0) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
-console.log("Channel parity OK: ids, versions and refs match across global and cn marketplaces.");
+console.log("Channel parity OK: ids, versions and refs match across global and Chinese marketplaces.");

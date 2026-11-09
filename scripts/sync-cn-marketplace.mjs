@@ -34,7 +34,9 @@ const gitUrl = (plugin) => `${channel.codeHost}/${repoPath(plugin)}.git`;
 const releaseUrl = (plugin) =>
   `${channel.codeHost}/${repoPath(plugin)}${channel.releaseTagPath}${ref(plugin)}`;
 const assetUrl = (plugin) =>
-  `${channel.assetBase}/${repoPath(plugin)}/raw/${ref(plugin)}/${plugin.logo}`;
+  channel.assetStyle === "jsdelivr"
+    ? `${channel.assetBase}/${repoPath(plugin)}@${ref(plugin)}/${plugin.logo}`
+    : `${channel.assetBase}/${repoPath(plugin)}/raw/${ref(plugin)}/${plugin.logo}`;
 
 const codex = {
   name: channel.marketplaceName,

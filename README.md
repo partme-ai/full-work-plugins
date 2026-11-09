@@ -6,17 +6,17 @@
 
 | 插件 | 本地插件目录 | 上游 CLI | 来源 |
 | --- | --- | --- | --- |
-| 钉钉 CLI | `../full-work-plugins-repositories/dingtalk-cli-plugin` | [DingTalk Workspace CLI](https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli) | [ZCode dingtalk-cli](https://github.com/zai-org/zcode-plugins/tree/0cc58d6/plugins/dingtalk-cli) |
-| 飞书 CLI | `../full-work-plugins-repositories/lark-cli-plugin` | [Lark CLI](https://github.com/larksuite/cli) | [ZCode lark-cli](https://github.com/zai-org/zcode-plugins/tree/0cc58d6/plugins/lark-cli) |
-| 企业微信 CLI | `../full-work-plugins-repositories/wecom-cli-plugin` | [WeCom CLI](https://github.com/WecomTeam/wecom-cli) | [ZCode wecom-cli](https://github.com/zai-org/zcode-plugins/tree/0cc58d6/plugins/wecom-cli) |
+| [钉钉 CLI v0.1.0](https://github.com/full-work-plugins/dingtalk-cli-plugin/releases/tag/v0.1.0) | `../full-work-plugins-repositories/dingtalk-cli-plugin` | [DingTalk Workspace CLI](https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli) | [ZCode dingtalk-cli](https://github.com/zai-org/zcode-plugins/tree/0cc58d6/plugins/dingtalk-cli) |
+| [飞书 CLI v0.1.0](https://github.com/full-work-plugins/lark-cli-plugin/releases/tag/v0.1.0) | `../full-work-plugins-repositories/lark-cli-plugin` | [Lark CLI](https://github.com/larksuite/cli) | [ZCode lark-cli](https://github.com/zai-org/zcode-plugins/tree/0cc58d6/plugins/lark-cli) |
+| [企业微信 CLI v0.1.0](https://github.com/full-work-plugins/wecom-cli-plugin/releases/tag/v0.1.0) | `../full-work-plugins-repositories/wecom-cli-plugin` | [WeCom CLI](https://github.com/WecomTeam/wecom-cli) | [ZCode wecom-cli](https://github.com/zai-org/zcode-plugins/tree/0cc58d6/plugins/wecom-cli) |
 
-## 当前状态与本地使用
+## 安装与使用
 
-`catalog.json` 中的三项属于 `local_candidate`：本地插件包可安装并触发各自的 setup/use Skill；独立远端仓库已有 feature 分支，但尚未发布版本 Release。因此它们尚未进入面向公网的 Codex、ZCode、Kimi 市场清单，不能把 feature 分支当成已发布版本。
+三个独立插件仓均已发布 `v0.1.0` Release，全球及中文市场清单均引用固定版本。Codex 可将 `partme-ai/full-work-plugins` 添加为插件市场，再选择 `dingtalk-cli`、`lark-cli`、`wecom-cli`。ZCode 在设置中的插件市场添加 `partme-ai/full-work-plugins`；Kimi Code CLI 使用 `/plugins marketplace https://raw.githubusercontent.com/partme-ai/full-work-plugins/main/kimi-marketplace.json`。
 
 在支持本地插件安装的宿主中，选择对应的 `full-work-plugins-repositories/<name>-plugin` 目录；先运行 `<name>-setup` 检查本机 CLI 与账号，再用 `<name>-use` 处理任务。插件不附带 CLI 二进制或凭证；安装 CLI、登录和远端写操作按 Skill 提示完成。没有账号时可以验证结构与帮助，不能声称业务调用可用。
 
-运行 `python3 scripts/validate-candidates.py` 检查市场目录、宿主 manifest、Skill 命名与来源声明。CLI 安装、账号授权、宿主加载和真实业务请求需要分别验证。
+插件包不附带 CLI 二进制或凭证。各插件先运行 setup Skill 检查 CLI 与身份；安装 CLI、登录和远端写操作按 Skill 提示完成。发布前已通过跨平台包结构检查与市场远端 Release 校验；账号授权、宿主实际加载和真实业务请求尚未验收。
 
 ## 市场结构
 
@@ -28,23 +28,23 @@ full-work-plugins/
 ├── .agents/plugins/marketplace.json    # Codex 全球清单（生成）
 ├── marketplace.json                    # ZCode 全球清单（生成）
 ├── kimi-marketplace.json               # Kimi 全球清单（生成）
-├── channels/                            # 全球、Gitee、AtomGit 渠道设置
-├── cn-marketplace/                     # 中文 Gitee 清单（生成）
-├── atomgit-marketplace/                # 中文 AtomGit 清单（生成）
+├── channels/                            # 全球与中文渠道设置
+├── cn-marketplace/                     # 中文清单（生成，GitHub 安装源）
+├── atomgit-marketplace/                # 中文清单（生成，GitHub 安装源）
 ├── dsh/index.json                      # DSH 索引（生成）
 └── scripts/                             # 生成、校验与后续发版工具
 ```
 
-插件实现只放在相邻的 `full-work-plugins-repositories/<插件名>-plugin/` 中。各插件仓维护 `.codex-plugin/plugin.json`、`.claude-plugin/plugin.json`、`.zcode-plugin/plugin.json`、`kimi.plugin.json`、`plugin.json` 和 `skills/`。当前三个插件均无版本 Release，因此上述公开清单为空；Gitee 与 AtomGit 的镜像配置也只是生成准备，不表示镜像已上线。
+插件实现只放在相邻的 `full-work-plugins-repositories/<插件名>-plugin/` 中。各插件仓维护 `.codex-plugin/plugin.json`、`.claude-plugin/plugin.json`、`.zcode-plugin/plugin.json`、`kimi.plugin.json`、`plugin.json` 和 `skills/`。中文清单目前仍使用已验证的 GitHub Release 安装源；Gitee 与 AtomGit 镜像尚未发布，不在清单中伪造镜像地址。
 
 ## 校验与后续发版
 
 ```bash
-python3 scripts/validate-candidates.py
-node scripts/sync-marketplaces.mjs
+python3 scripts/validate-candidates.py --catalog-only
+node scripts/sync-marketplaces.mjs --remote
 node scripts/sync-cn-marketplace.mjs
 node scripts/sync-cn-marketplace.mjs --channel=atomgit
 node scripts/verify-channel-parity.mjs
 ```
 
-上述命令默认只检查；改动 catalog 后使用对应脚本的 `--write` 生成，再重新运行检查。CI 对候选目录执行 `--catalog-only`，本地完整模式还会检查相邻插件仓。发版时先验证插件仓的版本标签和 Release，再将对应条目从 `candidatePlugins` 移入 `plugins`，补齐 logo 和独立仓清单，生成三宿主市场清单并校验远端版本。不要把 feature 分支写作正式安装源。
+上述命令默认只检查；改动 catalog 后使用对应脚本的 `--write` 生成，再重新运行检查。CI 从版本标签检出三个独立插件仓，核验 manifest、logo 和 GitHub Release。后续版本须先在插件仓完成版本标签与 Release，再更新本市场的 `catalog.json` 和生成清单。

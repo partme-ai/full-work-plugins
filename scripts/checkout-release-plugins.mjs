@@ -5,8 +5,10 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const catalog = JSON.parse(fs.readFileSync(path.join(root, 'catalog.json'), 'utf8'));
-const selected = new Set(process.argv.filter(arg => arg.startsWith('--plugin=')).map(arg => arg.slice(9)));
-if (!selected.size) throw new Error('Select explicit --plugin ids to avoid unrelated checkouts.');
+const selected = process.argv.includes('--all')
+  ? new Set(catalog.plugins.map(plugin => plugin.id))
+  : new Set(process.argv.filter(arg => arg.startsWith('--plugin=')).map(arg => arg.slice(9)));
+if (!selected.size && !process.argv.includes('--all')) throw new Error('Select --all or explicit --plugin ids.');
 for (const id of selected) {
   const plugin = catalog.plugins.find(entry => entry.id === id);
   if (!plugin || !/^[a-z0-9-]+$/.test(plugin.localDirectory) || !/^[\w-]+\/[\w-]+$/.test(plugin.repository)) throw new Error(`Invalid plugin: ${id}`);

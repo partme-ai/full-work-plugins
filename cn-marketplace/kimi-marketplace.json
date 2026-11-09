@@ -1,5 +1,24 @@
 {
   "version": "2",
-  "displayName": "Full Work 插件（Gitee 镜像）",
-  "plugins": []
+  "displayName": "Full Work 插件（中文）",
+  "plugins": [
+    {
+      "id": "dingtalk-cli",
+      "displayName": "DingTalk CLI（办公协作）",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.0/assets/logo.svg",
+      "source": "https://github.com/full-work-plugins/dingtalk-cli-plugin/releases/tag/v0.1.0"
+    },
+    {
+      "id": "lark-cli",
+      "displayName": "Lark CLI（办公协作）",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.0/assets/logo.svg",
+      "source": "https://github.com/full-work-plugins/lark-cli-plugin/releases/tag/v0.1.0"
+    },
+    {
+      "id": "wecom-cli",
+      "displayName": "WeCom CLI（办公协作）",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.0/assets/logo.svg",
+      "source": "https://github.com/full-work-plugins/wecom-cli-plugin/releases/tag/v0.1.0"
+    }
+  ]
 }

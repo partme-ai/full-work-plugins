@@ -17,7 +17,10 @@ jobs:
         with:
           python-version: '3.12'
       - run: python scripts/validate-candidates.py --catalog-only
-      - run: node scripts/sync-marketplaces.mjs
+      - run: node scripts/checkout-release-plugins.mjs --all
+      - run: node scripts/sync-marketplaces.mjs --remote
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: node scripts/sync-cn-marketplace.mjs
       - run: node scripts/sync-cn-marketplace.mjs --channel=atomgit
       - run: node scripts/verify-channel-parity.mjs
