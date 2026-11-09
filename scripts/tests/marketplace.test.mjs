@@ -47,7 +47,7 @@ test("office releases and Craft candidates have one owner and pinned sources", (
 
 test("Codex office cards use Chinese names, descriptions, and brand icons", () => {
   const cards = read(".agents/plugins/marketplace.json").plugins;
-  assert.equal(cards.length, 13);
+  assert.equal(cards.length, 17);
   for (const plugin of catalog.plugins) {
     const card = cards.find((item) => item.name === plugin.id);
     assert.ok(card, plugin.id);
@@ -75,7 +75,13 @@ test("local ZCode distribution embeds office packages and leaves Craft remote", 
   }
   for (const plugin of catalog.candidatePlugins) {
     const entry = distribution.plugins.find(item => item.name === plugin.id);
-    assert.equal(entry.source.source, "url");
+    const release = read("docs/craft-marketplace-candidate-releases.json").find(item => item.plugin === plugin.id);
+    if (release.maximumZipEntryBytes > 50 * 1024 * 1024) {
+      assert.deepEqual(entry.source, { source: "github", repo: plugin.repository, ref: `v${plugin.version}` });
+    } else {
+      assert.equal(entry.source.source, "url");
+      assert.equal(entry.source.sha256, release.archiveSha256);
+    }
     assert.ok(!fs.existsSync(path.join(root, "dist/local-marketplace/plugins", plugin.id)));
   }
 });
