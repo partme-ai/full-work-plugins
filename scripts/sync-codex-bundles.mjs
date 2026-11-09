@@ -16,6 +16,7 @@ const files = [
   "THIRD-PARTY-NOTICES.md"
 ];
 const dirs = ["assets", "skills"];
+const portable = (relative) => relative.split(path.sep).join("/");
 
 function walk(base) {
   const out = [];
@@ -35,7 +36,7 @@ for (const plugin of catalog.plugins) {
   if (head !== tag) throw new Error(`${plugin.id}: source checkout is not v${plugin.version}`);
   const entries = [
     ...files,
-    ...dirs.flatMap((dir) => walk(path.join(source, dir)).map((file) => path.relative(source, file)))
+    ...dirs.flatMap((dir) => walk(path.join(source, dir)).map((file) => portable(path.relative(source, file))))
   ];
   const content = (relative) => {
     const original = fs.readFileSync(path.join(source, relative));
@@ -56,7 +57,7 @@ for (const plugin of catalog.plugins) {
       fs.writeFileSync(destination, content(relative));
     }
   } else {
-    const actual = fs.existsSync(target) ? walk(target).map((file) => path.relative(target, file)).sort() : [];
+    const actual = fs.existsSync(target) ? walk(target).map((file) => portable(path.relative(target, file))).sort() : [];
     const expected = [...entries].sort();
     if (JSON.stringify(actual) !== JSON.stringify(expected)) {
       throw new Error(`${plugin.id}: bundled file list differs from published package`);
