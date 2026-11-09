@@ -10,6 +10,7 @@
  */
 import fs from 'node:fs'
 import path from 'node:path'
+import os from 'node:os'
 import { execFileSync } from 'node:child_process'
 
 const root = path.resolve(import.meta.dirname, '..')
@@ -17,17 +18,27 @@ const catalog = JSON.parse(fs.readFileSync(path.join(root, 'catalog.json'), 'utf
 const entries = [...(catalog.plugins ?? []), ...(catalog.candidatePlugins ?? [])]
 const plugins = []
 for (const entry of entries) {
-  const repoDir = path.resolve(root, '..', `${entry.repository.split('/')[0]}-repositories`, entry.localDirectory)
+  let repoDir = path.resolve(root, '..', `${entry.repository.split('/')[0]}-repositories`, entry.localDirectory)
   const ref = `v${entry.version}`
+  let temporary
+  try {
+    execFileSync('git', ['-C', repoDir, 'rev-parse', '--verify', `${ref}^{commit}`], { stdio: 'ignore' })
+  } catch {
+    temporary = fs.mkdtempSync(path.join(os.tmpdir(), 'work-dsh-release-'))
+    execFileSync('git', ['-c', 'advice.detachedHead=false', 'clone', '--quiet', '--depth', '1', '--branch', ref, `https://github.com/${entry.repository}.git`, temporary], { stdio: 'ignore' })
+    repoDir = temporary
+  }
   let pkg
   try {
     pkg = JSON.parse(execFileSync('git', ['-C', repoDir, 'show', `${ref}:dsh/package.json`], { encoding: 'utf8' }))
   } catch {
+    if (temporary) fs.rmSync(temporary, { recursive: true, force: true })
     console.warn(`skip ${entry.id}: no dsh/package.json`)
     continue
   }
   const commit = execFileSync('git', ['-C', repoDir, 'rev-parse', `${ref}^{commit}`], { encoding: 'utf8' }).trim()
   const timestamp = Number(execFileSync('git', ['-C', repoDir, 'show', '-s', '--format=%ct', commit], { encoding: 'utf8' }).trim())
+  if (temporary) fs.rmSync(temporary, { recursive: true, force: true })
   const logo = typeof entry.logo === 'string' ? entry.logo.replace(/^\.\//, '') : undefined
   plugins.push({
     name: pkg.name,
