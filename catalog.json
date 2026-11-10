@@ -1,6 +1,6 @@
 {
   "name": "full-work-plugins",
-  "displayName": "Full Work Plugins",
+  "displayName": "Full Work Plugins（办公提效工具）",
   "description": "Full Work plugin marketplace for Codex, ZCode, and Kimi Code: enterprise messaging, documents, spreadsheets, calendars, and tasks.",
   "plugins": [
     {
