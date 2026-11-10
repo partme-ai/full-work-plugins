@@ -1,6 +1,6 @@
 {
   "version": "2",
-  "displayName": "Full Work Plugins",
+  "displayName": "Full Work Plugins（办公提效工具）",
   "plugins": [
     {
       "id": "dingtalk-cli",
