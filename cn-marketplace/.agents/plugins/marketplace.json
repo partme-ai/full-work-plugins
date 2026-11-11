@@ -11,7 +11,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/cadcraft-plugin.git",
-        "ref": "v0.1.0-dev.20261109.5"
+        "ref": "v0.1.0-dev.20261111.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -22,13 +22,13 @@
       "componentTypes": [
         "ui"
       ],
-      "version": "0.1.0-dev.20261109.5",
+      "version": "0.1.0-dev.20261111.1",
       "description": "画房间平面、法兰孔系和零件标注：毫米坐标、图层与出图比例都能逐项复核。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/cadcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/cadcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
       "interface": {
         "displayName": "CADCraft（三维制图）",
         "shortDescription": "画房间平面、法兰孔系和零件标注：毫米坐标、图层与出图比例都能逐项复核。",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/cadcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/cadcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png"
       }
     },
     {
@@ -36,7 +36,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/deckcraft-plugin.git",
-        "ref": "v0.1.0-dev.20261109.5"
+        "ref": "v0.1.0-dev.20261111.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -47,13 +47,13 @@
       "componentTypes": [
         "ui"
       ],
-      "version": "0.1.0-dev.20261109.5",
+      "version": "0.1.0-dev.20261111.1",
       "description": "一句话生成可编辑演示文稿：路演、周报、培训和数据叙事，母版、版式与讲稿都能继续改。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/deckcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/deckcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
       "interface": {
         "displayName": "DeckCraft（演示文稿）",
         "shortDescription": "一句话生成可编辑演示文稿：路演、周报、培训和数据叙事，母版、版式与讲稿都能继续改。",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/deckcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/deckcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png"
       }
     },
     {
@@ -61,7 +61,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/designcraft-plugin.git",
-        "ref": "v0.1.0-dev.20261109.5"
+        "ref": "v0.1.0-dev.20261111.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -72,13 +72,13 @@
       "componentTypes": [
         "ui"
       ],
-      "version": "0.1.0-dev.20261109.5",
+      "version": "0.1.0-dev.20261111.1",
       "description": "海报、长文档、刊物和画册一次排好：母版、页码与出血统一处理，导出 PDF、IDML 或 EPUB。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/designcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/designcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
       "interface": {
         "displayName": "DesignCraft（页面排版）",
         "shortDescription": "海报、长文档、刊物和画册一次排好：母版、页码与出血统一处理，导出 PDF、IDML 或 EPUB。",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/designcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/designcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png"
       }
     },
     {
@@ -86,7 +86,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/dingtalk-cli-plugin.git",
-        "ref": "v0.1.1"
+        "ref": "v0.1.2"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -97,13 +97,13 @@
       "componentTypes": [
         "skills"
       ],
-      "version": "0.1.1",
+      "version": "0.1.2",
       "description": "钉钉 Workspace CLI 工作流：OAuth/设备授权、组织账号验证与消息、文档、日程操作。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.1/assets/logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.2/assets/logo.png",
       "interface": {
         "displayName": "钉钉 CLI",
         "shortDescription": "钉钉 Workspace CLI 工作流：OAuth/设备授权、组织账号验证与消息、文档、日程操作。",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.1/assets/logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.2/assets/logo.png"
       }
     },
     {
@@ -111,7 +111,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/effectcraft-plugin.git",
-        "ref": "v0.1.0-dev.20261018.5"
+        "ref": "v0.1.0-dev.20261111.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -122,13 +122,13 @@
       "componentTypes": [
         "ui"
       ],
-      "version": "0.1.0-dev.20261018.5",
+      "version": "0.1.0-dev.20261111.1",
       "description": "做可编辑动态图形：合成、关键帧、表达式、摄像机、遮罩与跟踪，渲染设置完整保留。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/effectcraft-plugin@v0.1.0-dev.20261018.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/effectcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
       "interface": {
         "displayName": "EffectCraft（动态图形）",
         "shortDescription": "做可编辑动态图形：合成、关键帧、表达式、摄像机、遮罩与跟踪，渲染设置完整保留。",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/effectcraft-plugin@v0.1.0-dev.20261018.5/assets/official-logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/effectcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png"
       }
     },
     {
@@ -136,7 +136,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/figcraft-plugin.git",
-        "ref": "v0.1.0-dev.20261019.2"
+        "ref": "v0.1.0-dev.20261111.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -147,13 +147,13 @@
       "componentTypes": [
         "ui"
       ],
-      "version": "0.1.0-dev.20261019.2",
+      "version": "0.1.0-dev.20261111.1",
       "description": "在对话里做可编辑设计稿：线框、设计系统、明暗主题、原型流与开发交接。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/figcraft-plugin@v0.1.0-dev.20261019.2/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/figcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
       "interface": {
         "displayName": "FigCraft（设计稿编辑）",
         "shortDescription": "在对话里做可编辑设计稿：线框、设计系统、明暗主题、原型流与开发交接。",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/figcraft-plugin@v0.1.0-dev.20261019.2/assets/official-logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/figcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png"
       }
     },
     {
@@ -161,7 +161,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/filmcraft-plugin.git",
-        "ref": "v0.1.0-dev.20261018.5"
+        "ref": "v0.1.0-dev.20261111.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -172,13 +172,13 @@
       "componentTypes": [
         "ui"
       ],
-      "version": "0.1.0-dev.20261018.5",
+      "version": "0.1.0-dev.20261111.1",
       "description": "多机位剪辑、字幕、逐词转录、调色与导出，时间线和素材引用一并交付。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/filmcraft-plugin@v0.1.0-dev.20261018.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/filmcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
       "interface": {
         "displayName": "FilmCraft（视频剪辑）",
         "shortDescription": "多机位剪辑、字幕、逐词转录、调色与导出，时间线和素材引用一并交付。",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/filmcraft-plugin@v0.1.0-dev.20261018.5/assets/official-logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/filmcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png"
       }
     },
     {
@@ -186,7 +186,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/gridcraft-plugin.git",
-        "ref": "v0.1.0-dev.20261109.5"
+        "ref": "v0.1.0-dev.20261111.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -197,13 +197,13 @@
       "componentTypes": [
         "ui"
       ],
-      "version": "0.1.0-dev.20261109.5",
+      "version": "0.1.0-dev.20261111.1",
       "description": "预算、对账、清洗、销售汇总与公式审计：单位和来源保留，公式随时可重算。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/gridcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/gridcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
       "interface": {
         "displayName": "GridCraft（电子表格）",
         "shortDescription": "预算、对账、清洗、销售汇总与公式审计：单位和来源保留，公式随时可重算。",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/gridcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/gridcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png"
       }
     },
     {
@@ -211,7 +211,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/lark-cli-plugin.git",
-        "ref": "v0.1.1"
+        "ref": "v0.1.2"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -222,13 +222,13 @@
       "componentTypes": [
         "skills"
       ],
-      "version": "0.1.1",
+      "version": "0.1.2",
       "description": "Lark CLI 工作流：覆盖文档、表格、多维表格、日历、消息等办公资源，并引导应用配置与 OAuth 登录。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.1/assets/logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.2/assets/logo.png",
       "interface": {
         "displayName": "飞书 CLI",
         "shortDescription": "Lark CLI 工作流：覆盖文档、表格、多维表格、日历、消息等办公资源，并引导应用配置与 OAuth 登录。",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.1/assets/logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.2/assets/logo.png"
       }
     },
     {
@@ -236,7 +236,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/lightcraft-plugin.git",
-        "ref": "v0.1.0-dev.20261018.4"
+        "ref": "v0.1.0-dev.20261111.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -247,13 +247,13 @@
       "componentTypes": [
         "ui"
       ],
-      "version": "0.1.0-dev.20261018.4",
+      "version": "0.1.0-dev.20261111.1",
       "description": "RAW 显影、风光人像、批量调色、曲线迁移与虚拟副本审稿，编辑全程非破坏。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/lightcraft-plugin@v0.1.0-dev.20261018.4/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/lightcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
       "interface": {
         "displayName": "LightCraft（照片调色）",
         "shortDescription": "RAW 显影、风光人像、批量调色、曲线迁移与虚拟副本审稿，编辑全程非破坏。",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/lightcraft-plugin@v0.1.0-dev.20261018.4/assets/official-logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/lightcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png"
       }
     },
     {
@@ -261,7 +261,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/pdfcraft-plugin.git",
-        "ref": "v0.1.0-dev.20261109.4"
+        "ref": "v0.1.0-dev.20261111.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -272,13 +272,13 @@
       "componentTypes": [
         "ui"
       ],
-      "version": "0.1.0-dev.20261109.4",
+      "version": "0.1.0-dev.20261111.1",
       "description": "PDF 重排、扫描件 OCR、表单填写、脱敏与印前检查，原件保留，逐页核对。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/pdfcraft-plugin@v0.1.0-dev.20261109.4/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/pdfcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
       "interface": {
         "displayName": "PdfCraft（PDF 处理）",
         "shortDescription": "PDF 重排、扫描件 OCR、表单填写、脱敏与印前检查，原件保留，逐页核对。",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/pdfcraft-plugin@v0.1.0-dev.20261109.4/assets/official-logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/pdfcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png"
       }
     },
     {
@@ -286,7 +286,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/photocraft-plugin.git",
-        "ref": "v0.1.0-dev.20261109.5"
+        "ref": "v0.1.0-dev.20261111.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -297,13 +297,13 @@
       "componentTypes": [
         "ui"
       ],
-      "version": "0.1.0-dev.20261109.5",
+      "version": "0.1.0-dev.20261111.1",
       "description": "图层、蒙版、抠图、修复与滤镜，支持文字和尺寸适配，工程可继续编辑并导出 PSD/PNG。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/photocraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/photocraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
       "interface": {
         "displayName": "PhotoCraft（图片编辑）",
         "shortDescription": "图层、蒙版、抠图、修复与滤镜，支持文字和尺寸适配，工程可继续编辑并导出 PSD/PNG。",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/photocraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/photocraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png"
       }
     },
     {
@@ -311,7 +311,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/soundcraft-plugin.git",
-        "ref": "v0.1.0-dev.20261109.5"
+        "ref": "v0.1.0-dev.20261111.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -322,13 +322,13 @@
       "componentTypes": [
         "ui"
       ],
-      "version": "0.1.0-dev.20261109.5",
+      "version": "0.1.0-dev.20261111.1",
       "description": "口播清理、多人响度、配音混音、剪辑与循环拼接，按段落和静音区间处理。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/soundcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/soundcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
       "interface": {
         "displayName": "SoundCraft（音频处理）",
         "shortDescription": "口播清理、多人响度、配音混音、剪辑与循环拼接，按段落和静音区间处理。",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/soundcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/soundcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png"
       }
     },
     {
@@ -336,56 +336,6 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/tencent-meeting-cli-plugin.git",
-        "ref": "v0.1.0"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_USE"
-      },
-      "category": "Productivity",
-      "line": "full-work",
-      "componentTypes": [
-        "skills"
-      ],
-      "version": "0.1.0",
-      "description": "腾讯会议 CLI 工作流：OAuth2 授权、会议管理、录制管理和参会报告查询。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/tencent-meeting-cli-plugin@v0.1.0/assets/logo.png",
-      "interface": {
-        "displayName": "腾讯会议 CLI",
-        "shortDescription": "腾讯会议 CLI 工作流：OAuth2 授权、会议管理、录制管理和参会报告查询。",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/tencent-meeting-cli-plugin@v0.1.0/assets/logo.png"
-      }
-    },
-    {
-      "name": "vectorcraft",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/full-work-plugins/vectorcraft-plugin.git",
-        "ref": "v0.1.0-dev.20261109.5"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_USE"
-      },
-      "category": "Creativity",
-      "line": "full-work",
-      "componentTypes": [
-        "ui"
-      ],
-      "version": "0.1.0-dev.20261109.5",
-      "description": "标志、图标集、信息图与 SVG 清理，多画板变体，导出 SVG/PDF/PNG 且路径可编辑。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/vectorcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png",
-      "interface": {
-        "displayName": "VectorCraft（矢量设计）",
-        "shortDescription": "标志、图标集、信息图与 SVG 清理，多画板变体，导出 SVG/PDF/PNG 且路径可编辑。",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/vectorcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png"
-      }
-    },
-    {
-      "name": "wecom-cli",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/full-work-plugins/wecom-cli-plugin.git",
         "ref": "v0.1.1"
       },
       "policy": {
@@ -398,12 +348,62 @@
         "skills"
       ],
       "version": "0.1.1",
+      "description": "腾讯会议 CLI 工作流：OAuth2 授权、会议管理、录制管理和参会报告查询。",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/tencent-meeting-cli-plugin@v0.1.1/assets/logo.png",
+      "interface": {
+        "displayName": "腾讯会议 CLI",
+        "shortDescription": "腾讯会议 CLI 工作流：OAuth2 授权、会议管理、录制管理和参会报告查询。",
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/tencent-meeting-cli-plugin@v0.1.1/assets/logo.png"
+      }
+    },
+    {
+      "name": "vectorcraft",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/full-work-plugins/vectorcraft-plugin.git",
+        "ref": "v0.1.0-dev.20261111.1"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Creativity",
+      "line": "full-work",
+      "componentTypes": [
+        "ui"
+      ],
+      "version": "0.1.0-dev.20261111.1",
+      "description": "标志、图标集、信息图与 SVG 清理，多画板变体，导出 SVG/PDF/PNG 且路径可编辑。",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/vectorcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
+      "interface": {
+        "displayName": "VectorCraft（矢量设计）",
+        "shortDescription": "标志、图标集、信息图与 SVG 清理，多画板变体，导出 SVG/PDF/PNG 且路径可编辑。",
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/vectorcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png"
+      }
+    },
+    {
+      "name": "wecom-cli",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/full-work-plugins/wecom-cli-plugin.git",
+        "ref": "v0.1.2"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity",
+      "line": "full-work",
+      "componentTypes": [
+        "skills"
+      ],
+      "version": "0.1.2",
       "description": "企业微信 CLI 工作流：覆盖消息、文档、表格、邮件、日历、会议、通讯录和待办，并支持扫码授权。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.1/assets/logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.2/assets/logo.png",
       "interface": {
         "displayName": "企业微信 CLI",
         "shortDescription": "企业微信 CLI 工作流：覆盖消息、文档、表格、邮件、日历、会议、通讯录和待办，并支持扫码授权。",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.1/assets/logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.2/assets/logo.png"
       }
     },
     {
@@ -411,7 +411,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/wordcraft-plugin.git",
-        "ref": "v0.1.0-dev.20261109.5"
+        "ref": "v0.1.0-dev.20261111.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -422,13 +422,13 @@
       "componentTypes": [
         "ui"
       ],
-      "version": "0.1.0-dev.20261109.5",
+      "version": "0.1.0-dev.20261111.1",
       "description": "周报、纪要、报价、验收报告与简历：样式、目录、页码和题注保持一致，导出可编辑 Word。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/wordcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/wordcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
       "interface": {
         "displayName": "WordCraft（文档写作）",
         "shortDescription": "周报、纪要、报价、验收报告与简历：样式、目录、页码和题注保持一致，导出可编辑 Word。",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/wordcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/wordcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png"
       }
     }
   ],

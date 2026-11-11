@@ -1,9 +1,9 @@
 {
   "name": "vectorcraft",
-  "version": "0.1.0-dev.20261109.5",
+  "version": "0.1.0-dev.20261111.1",
   "archiveRoot": "vectorcraft-plugin",
-  "url": "https://github.com/full-aigc-plugins/vectorcraft-plugin/releases/download/v0.1.0-dev.20261109.5/vectorcraft-plugin-0.1.0-dev.20261109.5.zip",
-  "sha256": "41cc4780899b3c0085f800546669698972b64ce2d8a741a62a070e5bf675f52e",
+  "url": "https://github.com/full-aigc-plugins/vectorcraft-plugin/releases/download/v0.1.0-dev.20261111.1/vectorcraft-plugin-0.1.0-dev.20261111.1.zip",
+  "sha256": "72a2cb0b7e746f50755f61f499b006433b712643649a2cbd12fc45f18e5586c0",
   "sourceRepository": "full-aigc-plugins/vectorcraft-plugin",
-  "sourceCommit": "fd964d92785774bca3320f0b6876945320a1efe3"
+  "sourceCommit": "c363183bf3b7b80a0e4fb624a10942899c817405"
 }

@@ -26,3 +26,13 @@ The public manifests now contain four plugins. Codex uses generated local packag
 Run `python3 scripts/validate-candidates.py --catalog-only`, `node scripts/sync-marketplaces.mjs --remote`, `node scripts/sync-cn-marketplace.mjs`, `node scripts/sync-cn-marketplace.mjs --channel=atomgit`, and `node scripts/verify-channel-parity.mjs` to check generated outputs and remote Releases. CI checks out pinned plugin tags before validation.
 
 Before moving a candidate into `plugins`, verify its independent version tag and Release, add its logo and repository marketplace manifest, generate the public host manifests, and validate the remote version. A feature branch is not a published installation source.
+
+## DeepSeek Harness plugin index
+
+Enable the experimental Custom plugin indexes bundle in DSH Plugins, then add this HTTPS index source in Discover:
+
+```text
+https://raw.githubusercontent.com/partme-ai/full-work-plugins/main/dsh/index.json
+```
+
+DSH has no built-in third-party index sources. This index pins immutable release commits from independent plugin repositories and installs each bundle from the repository root so skills and scripts are included. A local CLI and its authorization remain separate setup steps. Unpublished `local_candidate` entries stay out of the index. See the [official DSH plugin market guide](https://deepseek-harness.github.io/deepseek-harness/guide/plugin-market).

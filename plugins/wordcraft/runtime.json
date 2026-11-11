@@ -1,9 +1,9 @@
 {
   "name": "wordcraft",
-  "version": "0.1.0-dev.20261109.5",
+  "version": "0.1.0-dev.20261111.1",
   "archiveRoot": "wordcraft-plugin",
-  "url": "https://github.com/full-aigc-plugins/wordcraft-plugin/releases/download/v0.1.0-dev.20261109.5/wordcraft-plugin-0.1.0-dev.20261109.5.zip",
-  "sha256": "35345a7f43ea4728f34653f7e7b3c85f4abd43161ebd2c443d0553828af4d9e6",
+  "url": "https://github.com/full-aigc-plugins/wordcraft-plugin/releases/download/v0.1.0-dev.20261111.1/wordcraft-plugin-0.1.0-dev.20261111.1.zip",
+  "sha256": "5d91ca5d85d027b8415213c9ff29b731f2c0fa2ad4d55a25f70fcda827c049a1",
   "sourceRepository": "full-aigc-plugins/wordcraft-plugin",
-  "sourceCommit": "93b62112b6d3f1ce693af5cc4867de0c84fe5449"
+  "sourceCommit": "cab257061e6955e2ccbb63b381c40c8272581471"
 }

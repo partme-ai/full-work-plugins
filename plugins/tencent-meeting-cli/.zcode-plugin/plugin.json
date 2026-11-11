@@ -1,6 +1,6 @@
 {
   "name": "tencent-meeting-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Use the local Tencent Meeting CLI for OAuth2 authentication, meetings, recordings, and attendee reports.",
   "author": {
     "name": "PartMe.AI"
