@@ -1,26 +1,110 @@
 {
   "format": 1,
-  "title": "Full Work Plugins",
+  "title": "Full Work Plugins（办公提效工具）",
   "description": "Full Work plugin marketplace for Codex, ZCode, and Kimi Code: enterprise messaging, documents, spreadsheets, calendars, and tasks.",
   "metadata": {},
   "plugins": [
     {
+      "name": "dingtalk-cli",
+      "title": "DingTalk CLI (Office Collaboration)",
+      "description": "Use the local DingTalk Workspace CLI for messages, docs, tables, calendars, and tasks.",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/dingtalk-cli-plugin@v0.1.2/assets/logo.png",
+      "homepage": "https://github.com/full-work-plugins/dingtalk-cli-plugin",
+      "repository": {
+        "url": "https://github.com/full-work-plugins/dingtalk-cli-plugin"
+      },
+      "versions": [
+        {
+          "version": "0.1.2",
+          "publishTimestamp": 1794389550,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/full-work-plugins/dingtalk-cli-plugin",
+            "commit": "fad50a3fde2559c94b14ffa2a52dac49244b50b3"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lark-cli",
+      "title": "Lark CLI (Office Collaboration)",
+      "description": "Use the local Lark CLI for docs, sheets, Base, messages, and calendars.",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/lark-cli-plugin@v0.1.2/assets/logo.png",
+      "homepage": "https://github.com/full-work-plugins/lark-cli-plugin",
+      "repository": {
+        "url": "https://github.com/full-work-plugins/lark-cli-plugin"
+      },
+      "versions": [
+        {
+          "version": "0.1.2",
+          "publishTimestamp": 1794389554,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/full-work-plugins/lark-cli-plugin",
+            "commit": "e02ea3dd5c1d846ee18328fadeda059ad47a0180"
+          }
+        }
+      ]
+    },
+    {
+      "name": "tencent-meeting-cli",
+      "title": "Tencent Meeting CLI (Office Collaboration)",
+      "description": "Use the local Tencent Meeting CLI for OAuth2 authentication, meetings, recordings, and attendee reports.",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/tencent-meeting-cli-plugin@v0.1.1/assets/logo.png",
+      "homepage": "https://github.com/full-work-plugins/tencent-meeting-cli-plugin",
+      "repository": {
+        "url": "https://github.com/full-work-plugins/tencent-meeting-cli-plugin"
+      },
+      "versions": [
+        {
+          "version": "0.1.1",
+          "publishTimestamp": 1794389557,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/full-work-plugins/tencent-meeting-cli-plugin",
+            "commit": "d1cb1a1aff2e4e7fbf461d559ca5e492f20bfab2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "wecom-cli",
+      "title": "WeCom CLI (Office Collaboration)",
+      "description": "Use the local WeCom CLI for messages, docs, sheets, mail, meetings, and tasks.",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/wecom-cli-plugin@v0.1.2/assets/logo.png",
+      "homepage": "https://github.com/full-work-plugins/wecom-cli-plugin",
+      "repository": {
+        "url": "https://github.com/full-work-plugins/wecom-cli-plugin"
+      },
+      "versions": [
+        {
+          "version": "0.1.2",
+          "publishTimestamp": 1794389561,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/full-work-plugins/wecom-cli-plugin",
+            "commit": "6de765aa56ba4575c9d3c7ac2bc26947933db243"
+          }
+        }
+      ]
+    },
+    {
       "name": "cadcraft",
       "title": "CADCraft（三维制图）",
       "description": "画房间平面、法兰孔系和零件标注：毫米坐标、图层与出图比例都能逐项复核。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/cadcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/cadcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
+      "homepage": "https://github.com/full-aigc-plugins/cadcraft-plugin",
       "repository": {
         "url": "https://github.com/full-aigc-plugins/cadcraft-plugin"
       },
       "versions": [
         {
-          "version": "0.1.0-dev.20261109.5",
-          "publishTimestamp": 1794225681,
+          "version": "0.1.0-dev.20261111.1",
+          "publishTimestamp": 1794389565,
           "source": {
             "type": "git",
             "url": "https://github.com/full-aigc-plugins/cadcraft-plugin",
-            "commit": "6f381dc36cb9087cf125ca688c722d552500051a",
-            "path": "dsh"
+            "commit": "620e5d44199c52431154a9ac1eed81742e780b93"
           }
         }
       ]
@@ -29,19 +113,19 @@
       "name": "deckcraft",
       "title": "DeckCraft（演示文稿）",
       "description": "一句话生成可编辑演示文稿：路演、周报、培训和数据叙事，母版、版式与讲稿都能继续改。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/deckcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/deckcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
+      "homepage": "https://github.com/full-aigc-plugins/deckcraft-plugin",
       "repository": {
         "url": "https://github.com/full-aigc-plugins/deckcraft-plugin"
       },
       "versions": [
         {
-          "version": "0.1.0-dev.20261109.5",
-          "publishTimestamp": 1794225685,
+          "version": "0.1.0-dev.20261111.1",
+          "publishTimestamp": 1794389569,
           "source": {
             "type": "git",
             "url": "https://github.com/full-aigc-plugins/deckcraft-plugin",
-            "commit": "d0c3ab9ffb193c5c2895b92dc2432402e987953e",
-            "path": "dsh"
+            "commit": "4f1b62baa25258c72a81387707728bfe0d795bb8"
           }
         }
       ]
@@ -50,19 +134,19 @@
       "name": "designcraft",
       "title": "DesignCraft（页面排版）",
       "description": "海报、长文档、刊物和画册一次排好：母版、页码与出血统一处理，导出 PDF、IDML 或 EPUB。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/designcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/designcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
+      "homepage": "https://github.com/full-aigc-plugins/designcraft-plugin",
       "repository": {
         "url": "https://github.com/full-aigc-plugins/designcraft-plugin"
       },
       "versions": [
         {
-          "version": "0.1.0-dev.20261109.5",
-          "publishTimestamp": 1794225689,
+          "version": "0.1.0-dev.20261111.1",
+          "publishTimestamp": 1794389574,
           "source": {
             "type": "git",
             "url": "https://github.com/full-aigc-plugins/designcraft-plugin",
-            "commit": "a96a1f750b1395fde638278e04e9cfcbd8b4140b",
-            "path": "dsh"
+            "commit": "930924e49855f3557d9a604ed0f62594a8097cba"
           }
         }
       ]
@@ -71,19 +155,19 @@
       "name": "effectcraft",
       "title": "EffectCraft（动态图形）",
       "description": "做可编辑动态图形：合成、关键帧、表达式、摄像机、遮罩与跟踪，渲染设置完整保留。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/effectcraft-plugin@v0.1.0-dev.20261018.1/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/effectcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
+      "homepage": "https://github.com/full-aigc-plugins/effectcraft-plugin",
       "repository": {
         "url": "https://github.com/full-aigc-plugins/effectcraft-plugin"
       },
       "versions": [
         {
-          "version": "0.1.0-dev.20261018.1",
-          "publishTimestamp": 1794223288,
+          "version": "0.1.0-dev.20261111.1",
+          "publishTimestamp": 1794389579,
           "source": {
             "type": "git",
             "url": "https://github.com/full-aigc-plugins/effectcraft-plugin",
-            "commit": "7014811075439407872e759a3f294c155366b5f6",
-            "path": "dsh"
+            "commit": "61c3648fcdf6e547b036bc1280e5c5f96285977d"
           }
         }
       ]
@@ -92,40 +176,40 @@
       "name": "figcraft",
       "title": "FigCraft（设计稿编辑）",
       "description": "在对话里做可编辑设计稿：线框、设计系统、明暗主题、原型流与开发交接。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/figcraft-plugin@v0.1.0-dev.20261019.2/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/figcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
+      "homepage": "https://github.com/full-aigc-plugins/figcraft-plugin",
       "repository": {
         "url": "https://github.com/full-aigc-plugins/figcraft-plugin"
       },
       "versions": [
         {
-          "version": "0.1.0-dev.20261019.2",
-          "publishTimestamp": 1794223295,
+          "version": "0.1.0-dev.20261111.1",
+          "publishTimestamp": 1794389583,
           "source": {
             "type": "git",
             "url": "https://github.com/full-aigc-plugins/figcraft-plugin",
-            "commit": "4684d8a8536b21e121ca435de4f52c36888b4c1a",
-            "path": "dsh"
+            "commit": "9610ab123f80125e9b1daaf05228851b20760490"
           }
         }
       ]
     },
     {
-      "name": "filmcraft",
+      "name": "@full-aigc-plugins/filmcraft",
       "title": "FilmCraft（视频剪辑）",
       "description": "多机位剪辑、字幕、逐词转录、调色与导出，时间线和素材引用一并交付。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/filmcraft-plugin@v0.1.0-dev.20261018.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/filmcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
+      "homepage": "https://github.com/full-aigc-plugins/filmcraft-plugin",
       "repository": {
         "url": "https://github.com/full-aigc-plugins/filmcraft-plugin"
       },
       "versions": [
         {
-          "version": "0.1.0-dev.20261018.5",
-          "publishTimestamp": 1794223301,
+          "version": "0.1.0-dev.20261111.1",
+          "publishTimestamp": 1794389587,
           "source": {
             "type": "git",
             "url": "https://github.com/full-aigc-plugins/filmcraft-plugin",
-            "commit": "b32c36e9a172fdf2e24ddb5bfc3b2323bee4a1a2",
-            "path": "dsh"
+            "commit": "b50aa95883add76a15df22bc71ad3ba200a61d32"
           }
         }
       ]
@@ -134,19 +218,19 @@
       "name": "gridcraft",
       "title": "GridCraft（电子表格）",
       "description": "预算、对账、清洗、销售汇总与公式审计：单位和来源保留，公式随时可重算。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/gridcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/gridcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
+      "homepage": "https://github.com/full-aigc-plugins/gridcraft-plugin",
       "repository": {
         "url": "https://github.com/full-aigc-plugins/gridcraft-plugin"
       },
       "versions": [
         {
-          "version": "0.1.0-dev.20261109.5",
-          "publishTimestamp": 1794225694,
+          "version": "0.1.0-dev.20261111.1",
+          "publishTimestamp": 1794389591,
           "source": {
             "type": "git",
             "url": "https://github.com/full-aigc-plugins/gridcraft-plugin",
-            "commit": "84442032dbc12364d680af711ba571d998f8d256",
-            "path": "dsh"
+            "commit": "6b9971f2bbd8955928f8a33f1670bb1a8eece429"
           }
         }
       ]
@@ -155,19 +239,19 @@
       "name": "lightcraft",
       "title": "LightCraft（照片调色）",
       "description": "RAW 显影、风光人像、批量调色、曲线迁移与虚拟副本审稿，编辑全程非破坏。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/lightcraft-plugin@v0.1.0-dev.20261018.1/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/lightcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
+      "homepage": "https://github.com/full-aigc-plugins/lightcraft-plugin",
       "repository": {
         "url": "https://github.com/full-aigc-plugins/lightcraft-plugin"
       },
       "versions": [
         {
-          "version": "0.1.0-dev.20261018.1",
-          "publishTimestamp": 1794223308,
+          "version": "0.1.0-dev.20261111.1",
+          "publishTimestamp": 1794389596,
           "source": {
             "type": "git",
             "url": "https://github.com/full-aigc-plugins/lightcraft-plugin",
-            "commit": "e2bdb2efa80b073c1e3480908888d6f1d13a0fb3",
-            "path": "dsh"
+            "commit": "6eb1ec0d6f49be2ba902b46c0318662fe56e3a18"
           }
         }
       ]
@@ -176,40 +260,40 @@
       "name": "pdfcraft",
       "title": "PdfCraft（PDF 处理）",
       "description": "PDF 重排、扫描件 OCR、表单填写、脱敏与印前检查，原件保留，逐页核对。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/pdfcraft-plugin@v0.1.0-dev.20261109.4/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/pdfcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
+      "homepage": "https://github.com/full-aigc-plugins/pdfcraft-plugin",
       "repository": {
         "url": "https://github.com/full-aigc-plugins/pdfcraft-plugin"
       },
       "versions": [
         {
-          "version": "0.1.0-dev.20261109.4",
-          "publishTimestamp": 1794225699,
+          "version": "0.1.0-dev.20261111.1",
+          "publishTimestamp": 1794389600,
           "source": {
             "type": "git",
             "url": "https://github.com/full-aigc-plugins/pdfcraft-plugin",
-            "commit": "b089e827b156d675305c8cab188eae4ca0f61393",
-            "path": "dsh"
+            "commit": "a5fc5807d749db6b9d74a777757774ed1a68c239"
           }
         }
       ]
     },
     {
-      "name": "photocraft",
+      "name": "photocraft-plugin-harness",
       "title": "PhotoCraft（图片编辑）",
       "description": "图层、蒙版、抠图、修复与滤镜，支持文字和尺寸适配，工程可继续编辑并导出 PSD/PNG。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/photocraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/photocraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
+      "homepage": "https://github.com/full-aigc-plugins/photocraft-plugin",
       "repository": {
         "url": "https://github.com/full-aigc-plugins/photocraft-plugin"
       },
       "versions": [
         {
-          "version": "0.1.0-dev.20261109.5",
-          "publishTimestamp": 1794225703,
+          "version": "0.1.0-dev.20261111.1",
+          "publishTimestamp": 1794389603,
           "source": {
             "type": "git",
             "url": "https://github.com/full-aigc-plugins/photocraft-plugin",
-            "commit": "1dd148cf4dad370224f104c7e596af8694334d70",
-            "path": "dsh"
+            "commit": "af4d9b002ef150a8fec36c7a79c309b07f881286"
           }
         }
       ]
@@ -218,40 +302,40 @@
       "name": "soundcraft",
       "title": "SoundCraft（音频处理）",
       "description": "口播清理、多人响度、配音混音、剪辑与循环拼接，按段落和静音区间处理。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/soundcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/soundcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
+      "homepage": "https://github.com/full-aigc-plugins/soundcraft-plugin",
       "repository": {
         "url": "https://github.com/full-aigc-plugins/soundcraft-plugin"
       },
       "versions": [
         {
-          "version": "0.1.0-dev.20261109.5",
-          "publishTimestamp": 1794225708,
+          "version": "0.1.0-dev.20261111.1",
+          "publishTimestamp": 1794389607,
           "source": {
             "type": "git",
             "url": "https://github.com/full-aigc-plugins/soundcraft-plugin",
-            "commit": "3feceb9344e8b12002c33f0559e4c2a928313ad5",
-            "path": "dsh"
+            "commit": "8d7e7a51aaddf3eb6c48bb553b817e5a3123bba0"
           }
         }
       ]
     },
     {
-      "name": "vectorcraft",
+      "name": "vectorcraft-plugin-runtime",
       "title": "VectorCraft（矢量设计）",
       "description": "标志、图标集、信息图与 SVG 清理，多画板变体，导出 SVG/PDF/PNG 且路径可编辑。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/vectorcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/vectorcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
+      "homepage": "https://github.com/full-aigc-plugins/vectorcraft-plugin",
       "repository": {
         "url": "https://github.com/full-aigc-plugins/vectorcraft-plugin"
       },
       "versions": [
         {
-          "version": "0.1.0-dev.20261109.5",
-          "publishTimestamp": 1794225750,
+          "version": "0.1.0-dev.20261111.1",
+          "publishTimestamp": 1794389949,
           "source": {
             "type": "git",
             "url": "https://github.com/full-aigc-plugins/vectorcraft-plugin",
-            "commit": "fd964d92785774bca3320f0b6876945320a1efe3",
-            "path": "dsh"
+            "commit": "c363183bf3b7b80a0e4fb624a10942899c817405"
           }
         }
       ]
@@ -260,19 +344,19 @@
       "name": "wordcraft",
       "title": "WordCraft（文档写作）",
       "description": "周报、纪要、报价、验收报告与简历：样式、目录、页码和题注保持一致，导出可编辑 Word。",
-      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/wordcraft-plugin@v0.1.0-dev.20261109.5/assets/official-logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-aigc-plugins/wordcraft-plugin@v0.1.0-dev.20261111.1/assets/official-logo.png",
+      "homepage": "https://github.com/full-aigc-plugins/wordcraft-plugin",
       "repository": {
         "url": "https://github.com/full-aigc-plugins/wordcraft-plugin"
       },
       "versions": [
         {
-          "version": "0.1.0-dev.20261109.5",
-          "publishTimestamp": 1794225712,
+          "version": "0.1.0-dev.20261111.1",
+          "publishTimestamp": 1794389611,
           "source": {
             "type": "git",
             "url": "https://github.com/full-aigc-plugins/wordcraft-plugin",
-            "commit": "93b62112b6d3f1ce693af5cc4867de0c84fe5449",
-            "path": "dsh"
+            "commit": "cab257061e6955e2ccbb63b381c40c8272581471"
           }
         }
       ]

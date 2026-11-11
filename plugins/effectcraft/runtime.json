@@ -1,9 +1,9 @@
 {
   "name": "effectcraft",
-  "version": "0.1.0-dev.20261018.5",
+  "version": "0.1.0-dev.20261111.1",
   "archiveRoot": "effectcraft-plugin",
-  "url": "https://github.com/full-aigc-plugins/effectcraft-plugin/releases/download/v0.1.0-dev.20261018.5/effectcraft-plugin-0.1.0-dev.20261018.5.zip",
-  "sha256": "f1f115e8a241a4d81a338cda299ca6a68828f48a1835ab5c462ca80a9e907ea9",
+  "url": "https://github.com/full-aigc-plugins/effectcraft-plugin/releases/download/v0.1.0-dev.20261111.1/effectcraft-plugin-0.1.0-dev.20261111.1.zip",
+  "sha256": "961f14848341d9ecb1076dab26dccc5e03c1ffc4d380445b2bfd5f7b068478b8",
   "sourceRepository": "full-aigc-plugins/effectcraft-plugin",
-  "sourceCommit": "7014811075439407872e759a3f294c155366b5f6"
+  "sourceCommit": "61c3648fcdf6e547b036bc1280e5c5f96285977d"
 }

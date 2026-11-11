@@ -1,6 +1,6 @@
 {
   "name": "lark-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Use the local Lark CLI for docs, sheets, Base, messages, and calendars.",
   "author": {
     "name": "PartMe.AI"

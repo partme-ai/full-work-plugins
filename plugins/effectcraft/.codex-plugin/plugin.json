@@ -1,6 +1,6 @@
 {
   "name": "effectcraft",
-  "version": "0.1.0-dev.20261018.5",
+  "version": "0.1.0-dev.20261111.1",
   "description": "做可编辑动态图形：合成、关键帧、表达式、摄像机、遮罩与跟踪，渲染设置完整保留。",
   "skills": "./skills/",
   "mcpServers": "./.codex-plugin/mcp.json",
