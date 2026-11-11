@@ -57,3 +57,13 @@ node scripts/build-local-marketplace.mjs
 ```
 
 上述命令默认只检查；改动 catalog 后使用对应脚本的 `--write` 生成，再重新运行检查。CI 从版本标签检出四个独立插件仓，核验 manifest、logo 和 GitHub Release。后续版本须先在插件仓完成版本标签与 Release，再更新本市场的 `catalog.json` 和生成清单。
+
+## DeepSeek Harness 插件市场
+
+在 DSH 的「插件」中启用实验性的「自定义插件市场」，打开「发现」→「添加索引源」，填入：
+
+```text
+https://raw.githubusercontent.com/partme-ai/full-work-plugins/main/dsh/index.json
+```
+
+DSH 不预置第三方索引源；索引按独立插件仓的不可变发布标签生成，Git 安装源指向仓库根目录，使技能及所需脚本随组合包一起安装。安装某个 CLI 插件后，按其 setup 技能配置本机 CLI 与授权。未发布的 `local_candidate` 不进入索引。参见 [DSH 官方插件市场说明](https://deepseek-harness.github.io/deepseek-harness/guide/plugin-market)。

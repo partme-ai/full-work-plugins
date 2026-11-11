@@ -1,9 +1,9 @@
 {
   "name": "photocraft",
-  "version": "0.1.0-dev.20261109.5",
+  "version": "0.1.0-dev.20261111.1",
   "archiveRoot": "photocraft-plugin",
-  "url": "https://github.com/full-aigc-plugins/photocraft-plugin/releases/download/v0.1.0-dev.20261109.5/photocraft-plugin-0.1.0-dev.20261109.5.zip",
-  "sha256": "bcca404526dbd408f24669e09cb0d7d1ed3bb3a978c1acec9cd4b329f7ac4a2d",
+  "url": "https://github.com/full-aigc-plugins/photocraft-plugin/releases/download/v0.1.0-dev.20261111.1/photocraft-plugin-0.1.0-dev.20261111.1.zip",
+  "sha256": "190ff1a097b44ac7a0bf905bc88225db30532d23ca316773f4b266dcdbc7db8d",
   "sourceRepository": "full-aigc-plugins/photocraft-plugin",
-  "sourceCommit": "1dd148cf4dad370224f104c7e596af8694334d70"
+  "sourceCommit": "af4d9b002ef150a8fec36c7a79c309b07f881286"
 }

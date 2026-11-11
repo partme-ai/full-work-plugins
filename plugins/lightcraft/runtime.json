@@ -1,9 +1,9 @@
 {
   "name": "lightcraft",
-  "version": "0.1.0-dev.20261018.4",
+  "version": "0.1.0-dev.20261111.1",
   "archiveRoot": "lightcraft-plugin",
-  "url": "https://github.com/full-aigc-plugins/lightcraft-plugin/releases/download/v0.1.0-dev.20261018.4/lightcraft-plugin-0.1.0-dev.20261018.4.zip",
-  "sha256": "b054f84a9020fd4fe3c5023dd233e8e329a89c7788305b5407a1a7bf664fd355",
+  "url": "https://github.com/full-aigc-plugins/lightcraft-plugin/releases/download/v0.1.0-dev.20261111.1/lightcraft-plugin-0.1.0-dev.20261111.1.zip",
+  "sha256": "a1a31c3caf46b3a2d60cd5137c590a77a61d680ee89598c9db8432fca2424bc6",
   "sourceRepository": "full-aigc-plugins/lightcraft-plugin",
-  "sourceCommit": "e2bdb2efa80b073c1e3480908888d6f1d13a0fb3"
+  "sourceCommit": "6eb1ec0d6f49be2ba902b46c0318662fe56e3a18"
 }

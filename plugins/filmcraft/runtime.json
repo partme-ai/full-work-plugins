@@ -1,9 +1,9 @@
 {
   "name": "filmcraft",
-  "version": "0.1.0-dev.20261018.5",
+  "version": "0.1.0-dev.20261111.1",
   "archiveRoot": "filmcraft-plugin",
-  "url": "https://github.com/full-aigc-plugins/filmcraft-plugin/releases/download/v0.1.0-dev.20261018.5/filmcraft-plugin-0.1.0-dev.20261018.5.zip",
-  "sha256": "2c7e31af877961e1c8fab1b71e591a2f70c03f8d8b34b874a0a8178b1437b486",
+  "url": "https://github.com/full-aigc-plugins/filmcraft-plugin/releases/download/v0.1.0-dev.20261111.1/filmcraft-plugin-0.1.0-dev.20261111.1.zip",
+  "sha256": "561094b59000b967f5979cec8b376f453fb9bae2868e5e93242164904aba2765",
   "sourceRepository": "full-aigc-plugins/filmcraft-plugin",
-  "sourceCommit": "b32c36e9a172fdf2e24ddb5bfc3b2323bee4a1a2"
+  "sourceCommit": "b50aa95883add76a15df22bc71ad3ba200a61d32"
 }

@@ -9,7 +9,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-work-plugins/tencent-meeting-cli-plugin.git",
-        "ref": "v0.1.0"
+        "ref": "v0.1.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -20,13 +20,13 @@
       "componentTypes": [
         "skills"
       ],
-      "version": "0.1.0",
+      "version": "0.1.1",
       "description": "Use the local Tencent Meeting CLI for OAuth2 authentication, meetings, recordings, and attendee reports.",
-      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/tencent-meeting-cli-plugin@v0.1.0/assets/logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-work-plugins/tencent-meeting-cli-plugin@v0.1.1/assets/logo.png",
       "interface": {
         "displayName": "Tencent Meeting CLI (Office Collaboration)",
         "shortDescription": "Tencent Meeting meetings and recordings via local CLI.",
-        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/tencent-meeting-cli-plugin@v0.1.0/assets/logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-work-plugins/tencent-meeting-cli-plugin@v0.1.1/assets/logo.png"
       }
     }
   ]
